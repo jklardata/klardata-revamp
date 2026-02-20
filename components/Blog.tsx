@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Blog() {
   const blogPosts = [
     {
@@ -6,7 +8,7 @@ export default function Blog() {
       date: "Feb 5, 2026",
       category: "Data Infrastructure",
       readTime: "5 min read",
-      image: "/api/placeholder/400/250"
+      slug: "5-signs-business-needs-data-warehouse"
     },
     {
       title: "Tableau vs. Power BI: Which BI Tool is Right for You?",
@@ -14,7 +16,7 @@ export default function Blog() {
       date: "Jan 28, 2026",
       category: "BI Tools",
       readTime: "8 min read",
-      image: "/api/placeholder/400/250"
+      slug: "tableau-vs-power-bi"
     },
     {
       title: "How to Calculate ROI on Business Intelligence Investment",
@@ -22,7 +24,7 @@ export default function Blog() {
       date: "Jan 15, 2026",
       category: "Strategy",
       readTime: "6 min read",
-      image: "/api/placeholder/400/250"
+      slug: "roi-business-intelligence"
     }
   ];
 
@@ -43,9 +45,10 @@ export default function Blog() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {blogPosts.map((post, index) => (
-            <article
+            <Link
               key={index}
-              className="bg-white rounded-xl border-2 border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-primary-300 group"
+              href={`/blog/${post.slug}`}
+              className="bg-white rounded-xl border-2 border-slate-200 overflow-hidden hover:shadow-xl transition-all duration-300 hover:border-primary-300 group block"
             >
               {/* Image Placeholder */}
               <div className="relative h-48 bg-gradient-to-br from-primary-100 to-primary-200 overflow-hidden">
@@ -79,23 +82,26 @@ export default function Blog() {
                 {/* Date & Read More */}
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-slate-500">{post.date}</span>
-                  <button className="text-primary-600 text-sm font-semibold flex items-center group-hover:gap-2 transition-all">
+                  <span className="text-primary-600 text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
                     Read More
-                    <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
-                  </button>
+                  </span>
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
 
         {/* View All CTA */}
         <div className="text-center">
-          <button className="px-8 py-4 bg-slate-100 text-slate-700 rounded-lg font-semibold hover:bg-slate-200 transition-colors border-2 border-slate-200">
+          <Link
+            href="/blog"
+            className="inline-block px-8 py-4 bg-slate-100 text-slate-700 rounded-lg font-semibold hover:bg-slate-200 transition-colors border-2 border-slate-200"
+          >
             View All Articles
-          </button>
+          </Link>
         </div>
       </div>
     </section>

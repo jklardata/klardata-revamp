@@ -16,6 +16,10 @@ export default function About() {
               <p>
                 With over <strong className="text-slate-900">17 years of experience</strong> working
                 with industry leaders like <strong className="text-primary-600">Google</strong>,
+                <strong className="text-primary-600"> Pinterest</strong>,
+                <strong className="text-primary-600"> Salesforce</strong>,
+                <strong className="text-primary-600"> United Healthgroup</strong>,
+                <strong className="text-primary-600"> Herman Miller</strong>,
                 <strong className="text-primary-600"> Eventbrite</strong>,
                 <strong className="text-primary-600"> DirecTV</strong>, and
                 <strong className="text-primary-600"> Toyota Motors</strong>, I bring enterprise-level
@@ -135,7 +139,7 @@ export default function About() {
                       </svg>
                     </div>
                     <div>
-                      <div className="text-lg font-bold text-slate-900">San Francisco & Oslo</div>
+                      <div className="text-lg font-bold text-slate-900">San Francisco</div>
                       <div className="text-sm text-slate-600">Global Availability</div>
                     </div>
                   </div>
@@ -146,6 +150,10 @@ export default function About() {
                   <div className="text-sm text-slate-600 mb-3">Trusted by</div>
                   <div className="grid grid-cols-2 gap-3 text-sm font-medium text-slate-700">
                     <div>• Google</div>
+                    <div>• Pinterest</div>
+                    <div>• Salesforce</div>
+                    <div>• United Healthgroup</div>
+                    <div>• Herman Miller</div>
                     <div>• Eventbrite</div>
                     <div>• DirecTV</div>
                     <div>• Toyota Motors</div>

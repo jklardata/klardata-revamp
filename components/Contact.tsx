@@ -80,7 +80,6 @@ export default function Contact() {
                   <div>
                     <div className="font-semibold mb-1">Location</div>
                     <div className="text-blue-100">San Francisco, CA</div>
-                    <div className="text-blue-100">Oslo, Norway</div>
                   </div>
                 </div>
 
