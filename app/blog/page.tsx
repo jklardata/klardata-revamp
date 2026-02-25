@@ -2,6 +2,21 @@ import Link from "next/link";
 
 const articles = [
   {
+    title: "5 Signs Your Business Is Ready for a BI Implementation",
+    excerpt: "Most businesses know they need better data. But not every business is ready to implement BI. Here are the five signals that tell you the timing is right.",
+    date: "Feb 25, 2026",
+    category: "Strategy",
+    readTime: "6 min read",
+    slug: "bi-implementation-ready",
+    gradient: "from-violet-900 via-purple-900 to-blue-900",
+    accentColor: "text-violet-300",
+    icon: (
+      <svg className="w-24 h-24 opacity-20 text-violet-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      </svg>
+    )
+  },
+  {
     title: "5 Signs Your Business Needs a Data Warehouse",
     excerpt: "Spreadsheets worked when you started, but now they're holding you back. Here's how to know when it's time to upgrade your data infrastructure.",
     date: "Feb 5, 2026",
