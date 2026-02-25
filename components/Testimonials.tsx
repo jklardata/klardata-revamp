@@ -1,31 +1,31 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: "Justin is knowledgeable, very professional and gets things done in a timely manner. He has excellent communication skills and goes the extra mile in making complex metrics easy to understand. I would highly recommend him.",
-      author: "Senior Manager",
+      quote: "Justin is an excellent coworker and very knowledgeable in his line of work. My team would often times come to Justin for help in troubleshooting our technical data problems and Justin would respond with a fantastic solution in a professionally sound manner.",
+      author: "Barbara Arellano",
       company: "Google",
-      role: "Product Analytics",
+      role: "Global Process Manager, Indirect Procurement",
       photo: "/photos/testimonials/google-senior-manager.jpg"
     },
     {
-      quote: "Working with Justin was a pleasure. His technical expertise in data warehousing and business intelligence helped us build a robust analytics infrastructure that scaled with our growth. He delivered ahead of schedule and exceeded expectations.",
-      author: "VP of Engineering",
+      quote: "We were just getting our feet wet with analytics and becoming smarter about our data. Justin was able to provide expertise in Tableau consulting. He provided us with a Tableau proof of concept solution which combined modern data infrastructure and compelling visualizations to show to our HR executives in order to gain visibility in our workforce analytics.",
+      author: "Kim Bates",
       company: "Webcor Builders",
-      role: "Construction Technology",
+      role: "Vice President, CIO",
       photo: "/photos/testimonials/webcor-vp-engineering.jpg"
     },
     {
-      quote: "Justin's ability to understand our business needs and translate them into actionable data solutions was impressive. The dashboards he built became essential tools for our executive team. His attention to detail and commitment to quality stood out.",
-      author: "Director of Operations",
+      quote: "Justin (Klardata) was a huge help in helping get key data in the hands of decision makers in a way that made complex metrics easy to understand.",
+      author: "Brian Girer",
       company: "NEXT Trucking",
-      role: "Logistics",
+      role: "Product Manager",
       photo: "/photos/testimonials/next-trucking-director.jpg"
     },
     {
-      quote: "We brought Justin in to modernize our legacy reporting systems. Not only did he deliver a modern BI platform, but he also trained our team to maintain and extend it. His knowledge transfer was invaluable.",
-      author: "CTO",
-      company: "Education Startup",
-      role: "EdTech",
+      quote: "Justin is an excellent communicator and produced terrific work on our first project together. It was an overall great experience. I am looking forward to working with him again.",
+      author: "Cheryl Harris",
+      company: "Research360",
+      role: "Applied Researcher",
       photo: "/photos/testimonials/edtech-cto.jpg"
     },
     {
@@ -34,13 +34,6 @@ export default function Testimonials() {
       company: "Hitachi Consulting",
       role: "Telecommunications",
       photo: "/photos/testimonials/saas-head-of-data.jpg"
-    },
-    {
-      quote: "The ETL pipelines Justin built for us are rock-solid and have been running flawlessly for over two years. His code is clean, well-documented, and maintainable. A true professional who delivers production-quality work.",
-      author: "Engineering Lead",
-      company: "Financial Services",
-      role: "FinTech",
-      photo: "/photos/testimonials/fintech-engineering-lead.jpg"
     }
   ];
 
