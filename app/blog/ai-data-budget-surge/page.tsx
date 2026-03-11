@@ -89,7 +89,7 @@ export default function Article() {
           {/* Main article */}
           <article className="lg:col-span-2 space-y-0">
             <p className="text-slate-300 text-lg leading-relaxed mb-8">
-              For years, data teams fought for budget the same way every year: deck after deck justifying headcount, licenses, and infrastructure costs against business outcomes that were often hard to quantify. That dynamic just changed. According to dbt Labs&apos; 2025 State of Analytics Engineering report, data budgets grew 30% year-over-year—more than three times the prior year&apos;s growth rate of 9%. And for the first time, AI tooling ranked as the single highest investment priority across data organizations. This is not a blip. It is a structural shift, and understanding what is driving it matters whether you are a CDO making the case for more resources or a business leader trying to understand why your data team keeps asking for more money.
+              For years, data teams fought for budget the same way: deck after deck justifying headcount, licenses, and infrastructure costs against business outcomes that were often hard to quantify. That dynamic just changed. According to dbt Labs&apos; 2025 State of Analytics Engineering report, data budgets grew 30% year-over-year—more than three times the prior year&apos;s growth rate of 9%. And for the first time, AI tooling ranked as the single highest investment priority across data organizations. This is not a blip. It is a structural shift, and understanding what is driving it matters whether you are a CDO making the case for more resources or a business leader trying to understand why your data team keeps asking for more money.
             </p>
 
             {/* Section 1 */}

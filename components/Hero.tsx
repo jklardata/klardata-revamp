@@ -32,13 +32,13 @@ export default function Hero() {
           {/* Left Column - Text Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Transform Your Data Into
+              AI + Data Consulting
               <br />
-              <span className="text-primary-300">Actionable Insights</span>
+              <span className="text-primary-300">That Drives Decisions</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-blue-100 mb-8 font-light">
-              Expert business intelligence and analytics consulting for growing businesses
+              Combining artificial intelligence and business intelligence to turn your data into a competitive advantage
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">

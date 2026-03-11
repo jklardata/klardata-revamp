@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="text-2xl font-bold text-white mb-4">Klardata</div>
             <p className="text-slate-400 leading-relaxed max-w-md">
-              Business intelligence and analytics consulting for medium-sized businesses and startups.
+              AI and Data consulting for startups and enterprises.
             </p>
           </div>
 

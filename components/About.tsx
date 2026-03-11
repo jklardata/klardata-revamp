@@ -10,12 +10,12 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-lg text-slate-600 leading-relaxed">
               <p>
-                I help medium-sized businesses and startups make better decisions through
-                data-driven insights and robust business intelligence solutions.
+                I help companies ranging from startups to enterprises make smarter decisions faster by combining AI and business intelligence into a unified data strategy and applying the optimal tech stack for the job.
               </p>
               <p>
                 With over <strong className="text-slate-900">17 years of experience</strong> working
                 with industry leaders like <strong className="text-primary-600">Google</strong>,
+                <strong className="text-primary-600"> Docusign</strong>,
                 <strong className="text-primary-600"> Pinterest</strong>,
                 <strong className="text-primary-600"> Salesforce</strong>,
                 <strong className="text-primary-600"> United Healthgroup</strong>,
@@ -35,13 +35,13 @@ export default function About() {
             <div className="mt-8 grid grid-cols-2 gap-4">
               {[
                 "Business Intelligence",
-                "Data Warehousing",
-                "Tableau & Visualization",
+                "AI-Powered Analytics",
+                "Data Visualization",
                 "ETL & Data Pipeline",
-                "AWS Infrastructure",
-                "Database Development",
+                "LLM Integration",
+                "Predictive Modeling",
                 "Analytics Strategy",
-                "Data Integration"
+                "Data Warehousing"
               ].map((skill) => (
                 <div
                   key={skill}
