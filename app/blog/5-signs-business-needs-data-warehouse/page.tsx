@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-02-05T00:00:00Z",
     authors: ["Justin Leu"],
+    images: [{ url: "/api/og?title=5+Signs+Your+Business+Needs+a+Data+Warehouse&category=Data+Infrastructure", width: 1200, height: 630 }],
   },
   twitter: {
     title: "5 Signs Your Business Needs a Data Warehouse | Klardata",

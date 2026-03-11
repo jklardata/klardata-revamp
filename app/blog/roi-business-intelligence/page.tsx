@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-01-15T00:00:00Z",
     authors: ["Justin Leu"],
+    images: [{ url: "/api/og?title=How+to+Calculate+ROI+on+Business+Intelligence+Investment&category=Strategy", width: 1200, height: 630 }],
   },
   twitter: {
     title: "How to Calculate ROI on Business Intelligence Investment | Klardata",

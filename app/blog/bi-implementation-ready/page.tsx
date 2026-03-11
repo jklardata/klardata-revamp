@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-02-25T00:00:00Z",
     authors: ["Justin Leu"],
+    images: [{ url: "/api/og?title=5+Signs+Your+Business+Is+Ready+for+a+BI+Implementation&category=Strategy", width: 1200, height: 630 }],
   },
   twitter: {
     title: "5 Signs Your Business Is Ready for a BI Implementation | Klardata",

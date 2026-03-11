@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-03-10T00:00:00Z",
     authors: ["Justin Leu"],
+    images: [{ url: "/api/og?title=AI+Is+Driving+a+30%25+Surge+in+Data+Budgets&category=Strategy", width: 1200, height: 630 }],
   },
   twitter: {
     title: "AI Is Driving a 30% Surge in Data Budgets | Klardata",

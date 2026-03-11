@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-01-28T00:00:00Z",
     authors: ["Justin Leu"],
+    images: [{ url: "/api/og?title=Tableau+vs.+Power+BI%3A+An+Honest+2026+Comparison&category=BI+Tools", width: 1200, height: 630 }],
   },
   twitter: {
     title: "Tableau vs. Power BI: An Honest 2026 Comparison | Klardata",

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Klardata",
     locale: "en_US",
-    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Klardata — BI & Analytics Consulting" }],
+    images: [{ url: "/api/og?title=Business+Intelligence+%26+Analytics+Consulting&category=Insights", width: 1200, height: 630, alt: "Klardata — BI & Analytics Consulting" }],
   },
   twitter: {
     card: "summary_large_image",

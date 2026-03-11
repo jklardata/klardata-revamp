@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-03-04T00:00:00Z",
     authors: ["Justin Leu"],
+    images: [{ url: "/api/og?title=The+Semantic+Layer%3A+The+Missing+Link+for+AI-Ready+Analytics&category=Data+Infrastructure", width: 1200, height: 630 }],
   },
   twitter: {
     title: "The Semantic Layer: The Missing Link for AI-Ready Analytics | Klardata",
