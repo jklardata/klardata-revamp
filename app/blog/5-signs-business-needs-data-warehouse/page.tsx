@@ -2,8 +2,21 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "5 Signs Your Business Needs a Data Warehouse | Klardata",
-  description: "Spreadsheets worked when you started, but now they're holding you back. Here's how to know when it's time to upgrade your data infrastructure.",
+  title: "5 Signs Your Business Needs a Data Warehouse",
+  description: "Spreadsheets held you back long enough. Here's how to know it's time to upgrade to a cloud data warehouse like Snowflake, BigQuery, or Redshift.",
+  alternates: { canonical: "https://klardata.com/blog/5-signs-business-needs-data-warehouse" },
+  openGraph: {
+    title: "5 Signs Your Business Needs a Data Warehouse | Klardata",
+    description: "Spreadsheets held you back long enough. Here's how to know it's time to upgrade to a cloud data warehouse like Snowflake, BigQuery, or Redshift.",
+    url: "https://klardata.com/blog/5-signs-business-needs-data-warehouse",
+    type: "article",
+    publishedTime: "2026-02-05T00:00:00Z",
+    authors: ["Justin Leu"],
+  },
+  twitter: {
+    title: "5 Signs Your Business Needs a Data Warehouse | Klardata",
+    description: "Spreadsheets held you back long enough. Here's how to know it's time to move to Snowflake, BigQuery, or Redshift.",
+  },
 };
 
 const relatedArticles = [
@@ -14,6 +27,23 @@ const relatedArticles = [
 export default function Article() {
   return (
     <div className="min-h-screen bg-[#0d1b2e]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "5 Signs Your Business Needs a Data Warehouse",
+            "description": "Spreadsheets held you back long enough. Here's how to know it's time to upgrade to a cloud data warehouse like Snowflake, BigQuery, or Redshift.",
+            "datePublished": "2026-02-05T00:00:00Z",
+            "dateModified": "2026-02-05T00:00:00Z",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
+            "url": "https://klardata.com/blog/5-signs-business-needs-data-warehouse",
+            "mainEntityOfPage": "https://klardata.com/blog/5-signs-business-needs-data-warehouse",
+          }),
+        }}
+      />
       {/* Nav */}
       <header className="border-b border-white/10 px-6 py-4 sticky top-0 bg-[#0d1b2e]/90 backdrop-blur z-10">
         <div className="max-w-screen-2xl mx-auto flex items-center justify-between">

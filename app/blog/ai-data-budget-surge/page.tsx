@@ -2,8 +2,21 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Is Driving a 30% Surge in Data Budgets — What That Means for Your Team | Klardata",
-  description: "dbt Labs' 2025 report found data budgets grew 30% year-over-year, with AI tooling as the #1 investment priority. Here's what's driving the surge and what it means if you haven't invested yet.",
+  title: "AI Is Driving a 30% Surge in Data Budgets",
+  description: "dbt Labs found data budgets grew 30% year-over-year in 2025, with AI tooling as the #1 investment priority. Here's what's driving the surge and what to do if you haven't caught up.",
+  alternates: { canonical: "https://klardata.com/blog/ai-data-budget-surge" },
+  openGraph: {
+    title: "AI Is Driving a 30% Surge in Data Budgets | Klardata",
+    description: "dbt Labs found data budgets grew 30% year-over-year in 2025, with AI tooling as the #1 investment priority. Here's what's driving the surge.",
+    url: "https://klardata.com/blog/ai-data-budget-surge",
+    type: "article",
+    publishedTime: "2026-03-10T00:00:00Z",
+    authors: ["Justin Leu"],
+  },
+  twitter: {
+    title: "AI Is Driving a 30% Surge in Data Budgets | Klardata",
+    description: "dbt Labs: data budgets grew 30% YoY in 2025. AI tooling is the #1 investment priority. Here's what it means for your team.",
+  },
 };
 
 const relatedArticles = [
@@ -14,6 +27,23 @@ const relatedArticles = [
 export default function Article() {
   return (
     <div className="min-h-screen bg-[#0d1b2e]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "AI Is Driving a 30% Surge in Data Budgets—What That Means for Your Team",
+            "description": "dbt Labs found data budgets grew 30% year-over-year in 2025, with AI tooling as the #1 investment priority.",
+            "datePublished": "2026-03-10T00:00:00Z",
+            "dateModified": "2026-03-10T00:00:00Z",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
+            "url": "https://klardata.com/blog/ai-data-budget-surge",
+            "mainEntityOfPage": "https://klardata.com/blog/ai-data-budget-surge",
+          }),
+        }}
+      />
       {/* Nav */}
       <header className="border-b border-white/10 px-6 py-4 sticky top-0 bg-[#0d1b2e]/90 backdrop-blur z-10">
         <div className="max-w-screen-2xl mx-auto flex items-center justify-between">

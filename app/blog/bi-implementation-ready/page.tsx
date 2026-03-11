@@ -2,8 +2,21 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "5 Signs Your Business Is Ready for a BI Implementation | Klardata",
-  description: "Most businesses know they need better data. But not every business is ready to implement BI. Here are the five signals that tell you the timing is right.",
+  title: "5 Signs Your Business Is Ready for a BI Implementation",
+  description: "Most businesses know they need better data, but not every business is ready to implement BI. Here are five clear signals that tell you the timing is right.",
+  alternates: { canonical: "https://klardata.com/blog/bi-implementation-ready" },
+  openGraph: {
+    title: "5 Signs Your Business Is Ready for a BI Implementation | Klardata",
+    description: "Most businesses know they need better data, but not every business is ready to implement BI. Here are five clear signals the timing is right.",
+    url: "https://klardata.com/blog/bi-implementation-ready",
+    type: "article",
+    publishedTime: "2026-02-25T00:00:00Z",
+    authors: ["Justin Leu"],
+  },
+  twitter: {
+    title: "5 Signs Your Business Is Ready for a BI Implementation | Klardata",
+    description: "Not every business is ready to implement BI. Here are 5 clear signals the timing is right.",
+  },
 };
 
 const relatedArticles = [
@@ -14,6 +27,23 @@ const relatedArticles = [
 export default function Article() {
   return (
     <div className="min-h-screen bg-[#0d1b2e]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "5 Signs Your Business Is Ready for a BI Implementation",
+            "description": "Most businesses know they need better data, but not every business is ready to implement BI. Here are five clear signals that tell you the timing is right.",
+            "datePublished": "2026-02-25T00:00:00Z",
+            "dateModified": "2026-02-25T00:00:00Z",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
+            "url": "https://klardata.com/blog/bi-implementation-ready",
+            "mainEntityOfPage": "https://klardata.com/blog/bi-implementation-ready",
+          }),
+        }}
+      />
       {/* Nav */}
       <header className="border-b border-white/10 px-6 py-4 sticky top-0 bg-[#0d1b2e]/90 backdrop-blur z-10">
         <div className="max-w-screen-2xl mx-auto flex items-center justify-between">

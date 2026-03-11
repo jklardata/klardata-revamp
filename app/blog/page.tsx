@@ -1,4 +1,21 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog & Insights — Data, BI, and Analytics",
+  description: "Practical guides on data strategy, business intelligence, data warehousing, and making better decisions with your data. Written by Justin Leu, BI consultant with 17+ years experience.",
+  alternates: { canonical: "https://klardata.com/blog" },
+  openGraph: {
+    title: "Blog & Insights — Data, BI, and Analytics | Klardata",
+    description: "Practical guides on data strategy, business intelligence, and analytics. Written by Justin Leu, BI consultant with 17+ years experience.",
+    url: "https://klardata.com/blog",
+    type: "website",
+  },
+  twitter: {
+    title: "Blog & Insights — Data, BI, and Analytics | Klardata",
+    description: "Practical guides on data strategy, business intelligence, and analytics.",
+  },
+};
 
 const articles = [
   {

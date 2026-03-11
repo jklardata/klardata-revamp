@@ -2,8 +2,21 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tableau vs. Power BI: Which BI Tool is Right for You? | Klardata",
-  description: "An honest comparison of the two leading business intelligence platforms, including costs, capabilities, and ideal use cases.",
+  title: "Tableau vs. Power BI: An Honest 2026 Comparison",
+  description: "An honest comparison of Tableau vs. Power BI in 2026—costs, capabilities, licensing, and which business intelligence platform fits your team's needs.",
+  alternates: { canonical: "https://klardata.com/blog/tableau-vs-power-bi" },
+  openGraph: {
+    title: "Tableau vs. Power BI: An Honest 2026 Comparison | Klardata",
+    description: "Costs, capabilities, licensing, and which business intelligence platform fits your team's needs. A practitioner's honest take.",
+    url: "https://klardata.com/blog/tableau-vs-power-bi",
+    type: "article",
+    publishedTime: "2026-01-28T00:00:00Z",
+    authors: ["Justin Leu"],
+  },
+  twitter: {
+    title: "Tableau vs. Power BI: An Honest 2026 Comparison | Klardata",
+    description: "Costs, capabilities, and which BI platform fits your team. An honest practitioner's take.",
+  },
 };
 
 const relatedArticles = [
@@ -14,6 +27,23 @@ const relatedArticles = [
 export default function Article() {
   return (
     <div className="min-h-screen bg-[#0d1b2e]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Tableau vs. Power BI: An Honest 2026 Comparison",
+            "description": "An honest comparison of Tableau vs. Power BI in 2026—costs, capabilities, licensing, and which business intelligence platform fits your team's needs.",
+            "datePublished": "2026-01-28T00:00:00Z",
+            "dateModified": "2026-01-28T00:00:00Z",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
+            "url": "https://klardata.com/blog/tableau-vs-power-bi",
+            "mainEntityOfPage": "https://klardata.com/blog/tableau-vs-power-bi",
+          }),
+        }}
+      />
       {/* Nav */}
       <header className="border-b border-white/10 px-6 py-4 sticky top-0 bg-[#0d1b2e]/90 backdrop-blur z-10">
         <div className="max-w-screen-2xl mx-auto flex items-center justify-between">

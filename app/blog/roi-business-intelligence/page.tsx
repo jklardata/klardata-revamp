@@ -2,8 +2,21 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How to Calculate ROI on Business Intelligence Investment | Klardata",
-  description: "BI projects often struggle to show value. This framework helps you quantify the impact and justify the investment to stakeholders.",
+  title: "How to Calculate ROI on Business Intelligence Investment",
+  description: "Business intelligence projects struggle to show value. This framework helps you quantify impact, measure what matters, and justify the investment to stakeholders.",
+  alternates: { canonical: "https://klardata.com/blog/roi-business-intelligence" },
+  openGraph: {
+    title: "How to Calculate ROI on Business Intelligence Investment | Klardata",
+    description: "Business intelligence projects struggle to show value. This framework helps you quantify impact and justify the investment to stakeholders.",
+    url: "https://klardata.com/blog/roi-business-intelligence",
+    type: "article",
+    publishedTime: "2026-01-15T00:00:00Z",
+    authors: ["Justin Leu"],
+  },
+  twitter: {
+    title: "How to Calculate ROI on Business Intelligence Investment | Klardata",
+    description: "BI projects struggle to show value. This framework helps you quantify impact and make the case to stakeholders.",
+  },
 };
 
 const relatedArticles = [
@@ -14,6 +27,23 @@ const relatedArticles = [
 export default function Article() {
   return (
     <div className="min-h-screen bg-[#0d1b2e]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "How to Calculate ROI on Business Intelligence Investment",
+            "description": "Business intelligence projects struggle to show value. This framework helps you quantify impact, measure what matters, and justify the investment to stakeholders.",
+            "datePublished": "2026-01-15T00:00:00Z",
+            "dateModified": "2026-01-15T00:00:00Z",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
+            "url": "https://klardata.com/blog/roi-business-intelligence",
+            "mainEntityOfPage": "https://klardata.com/blog/roi-business-intelligence",
+          }),
+        }}
+      />
       {/* Nav */}
       <header className="border-b border-white/10 px-6 py-4 sticky top-0 bg-[#0d1b2e]/90 backdrop-blur z-10">
         <div className="max-w-screen-2xl mx-auto flex items-center justify-between">
