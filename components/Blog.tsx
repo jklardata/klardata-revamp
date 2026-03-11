@@ -2,6 +2,36 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "AI Is Driving a 30% Surge in Data Budgets—What That Means for Your Team",
+    excerpt: "dbt Labs' 2025 report found data budgets grew 30% year-over-year, with AI tooling as the #1 investment priority. Here's what that means for your organization.",
+    date: "Mar 10, 2026",
+    category: "Strategy",
+    readTime: "7 min read",
+    slug: "ai-data-budget-surge",
+    gradient: "from-emerald-900 via-teal-900 to-blue-950",
+    accentColor: "text-emerald-300",
+    icon: (
+      <svg className="w-20 h-20 opacity-20 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+      </svg>
+    )
+  },
+  {
+    title: "AI and the Semantic Layer: The Missing Link in Modern Data Infrastructure",
+    excerpt: "How the semantic layer is evolving with AI, why legacy OLAP systems fall short, and which modern tools are redefining how organizations make sense of their data.",
+    date: "Mar 4, 2026",
+    category: "Data Infrastructure",
+    readTime: "9 min read",
+    slug: "ai-semantic-layer",
+    gradient: "from-cyan-900 via-blue-900 to-indigo-950",
+    accentColor: "text-cyan-300",
+    icon: (
+      <svg className="w-20 h-20 opacity-20 text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+      </svg>
+    )
+  },
+  {
     title: "5 Signs Your Business Needs a Data Warehouse",
     excerpt: "Spreadsheets worked when you started, but now they're holding you back. Here's how to know when it's time to upgrade your data infrastructure.",
     date: "Feb 5, 2026",
