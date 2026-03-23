@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Blog & Insights — Data, BI, and Analytics",
   description: "Practical guides on data strategy, business intelligence, data warehousing, and making better decisions with your data. Written by Justin Leu, BI consultant with 17+ years experience.",
+  keywords: ["data analytics blog", "business intelligence articles", "data strategy guides", "BI consulting insights", "tableau dbt analytics", "data warehouse guides", "analytics engineering"],
   alternates: { canonical: "https://klardata.com/blog" },
   openGraph: {
     title: "Blog & Insights — Data, BI, and Analytics | Klardata",
@@ -18,6 +19,66 @@ export const metadata: Metadata = {
 };
 
 const articles = [
+  {
+    title: "How to Document a Tableau Workbook (Without Doing It Manually)",
+    excerpt: "Tableau ships with zero documentation tooling. Here's what a properly documented workbook looks like, how to read a .twb file without Tableau Desktop, and how to generate full docs automatically in your browser.",
+    date: "Mar 19, 2026",
+    category: "Data Infrastructure",
+    readTime: "7 min read",
+    slug: "tableau-workbook-documentation",
+    gradient: "from-blue-900 via-indigo-900 to-slate-950",
+    accentColor: "text-blue-300",
+    icon: (
+      <svg className="w-24 h-24 opacity-20 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      </svg>
+    )
+  },
+  {
+    title: "Tableau Workbook Health Check: What to Audit Before You Migrate",
+    excerpt: "Unused calculated fields, circular dependencies, and nested LOD expressions discovered mid-migration will cost you double the time. Here's what a proper workbook audit checks and how to score overall health.",
+    date: "Mar 19, 2026",
+    category: "Data Quality",
+    readTime: "8 min read",
+    slug: "tableau-workbook-audit",
+    gradient: "from-orange-900 via-amber-900 to-slate-950",
+    accentColor: "text-amber-300",
+    icon: (
+      <svg className="w-24 h-24 opacity-20 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+      </svg>
+    )
+  },
+  {
+    title: "How to Compare Two Tableau Workbooks (And Actually See What Changed)",
+    excerpt: "Tableau has no native version comparison. Here's how to diff two .twb files and see every added, removed, and modified calculated field, parameter, and sheet with line-level formula changes.",
+    date: "Mar 19, 2026",
+    category: "Data Infrastructure",
+    readTime: "6 min read",
+    slug: "tableau-workbook-diff",
+    gradient: "from-violet-900 via-purple-900 to-slate-950",
+    accentColor: "text-violet-300",
+    icon: (
+      <svg className="w-24 h-24 opacity-20 text-violet-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+      </svg>
+    )
+  },
+  {
+    title: "Migrating Tableau Calculated Fields to dbt: What Nobody Tells You",
+    excerpt: "The real pain of inheriting a Tableau workbook with 100+ calculated fields — LOD expressions, internal ID mappings, mixed aggregates — and a tool I built to make the migration actually manageable.",
+    date: "Mar 12, 2026",
+    category: "Data Infrastructure",
+    readTime: "8 min read",
+    slug: "tableau-to-dbt-migration",
+    gradient: "from-emerald-900 via-teal-900 to-blue-950",
+    accentColor: "text-emerald-300",
+    icon: (
+      <svg className="w-24 h-24 opacity-20 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+    )
+  },
   {
     title: "AI Is Driving a 30% Surge in Data Budgets—What That Means for Your Team",
     excerpt: "dbt Labs' 2025 report found data budgets grew 30% year-over-year, with AI tooling as the #1 investment priority. Here's what's driving the surge and what to do if you haven't caught up yet.",

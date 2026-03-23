@@ -3,7 +3,7 @@ export default function HowItWorks() {
     {
       number: "01",
       title: "Discovery Call",
-      description: "We start with a free 30-minute consultation to understand your business challenges, data landscape, and goals. No sales pitch—just honest assessment.",
+      description: "We start with a free 30-minute consultation to understand your business challenges, data landscape, and goals. No sales pitch. Just an honest assessment.",
       duration: "30 minutes",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -25,7 +25,7 @@ export default function HowItWorks() {
     {
       number: "03",
       title: "Proof of Concept",
-      description: "Before full implementation, we build a working prototype with real data. You see results within 2 weeks—dashboards, insights, and value delivered upfront.",
+      description: "Before full implementation, we build a working prototype with real data. You see results within 2 weeks: dashboards, insights, and value delivered upfront.",
       duration: "2-3 weeks",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,7 +127,7 @@ export default function HowItWorks() {
             Ready to Get Started?
           </h3>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Book your free discovery call. No obligation, no sales pressure—just an honest conversation about your data.
+            Book your free discovery call. No obligation, no sales pressure. Just an honest conversation about your data.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

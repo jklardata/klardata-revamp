@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "5 Signs Your Business Is Ready for a BI Implementation",
   description: "Most businesses know they need better data, but not every business is ready to implement BI. Here are five clear signals that tell you the timing is right.",
+  keywords: ["bi implementation checklist", "business intelligence readiness", "when to implement bi", "business intelligence planning", "bi project readiness", "is my business ready for bi", "bi implementation signs"],
   alternates: { canonical: "https://klardata.com/blog/bi-implementation-ready" },
   openGraph: {
     title: "5 Signs Your Business Is Ready for a BI Implementation | Klardata",

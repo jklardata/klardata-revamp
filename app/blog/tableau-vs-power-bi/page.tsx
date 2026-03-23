@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Tableau vs. Power BI: An Honest 2026 Comparison",
   description: "An honest comparison of Tableau vs. Power BI in 2026—costs, capabilities, licensing, and which business intelligence platform fits your team's needs.",
+  keywords: ["tableau vs power bi 2026", "tableau vs power bi cost", "power bi vs tableau comparison", "tableau vs power bi features", "which bi tool to use", "tableau vs microsoft power bi", "best business intelligence tool 2026"],
   alternates: { canonical: "https://klardata.com/blog/tableau-vs-power-bi" },
   openGraph: {
     title: "Tableau vs. Power BI: An Honest 2026 Comparison | Klardata",

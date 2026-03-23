@@ -2,7 +2,37 @@ import Link from "next/link";
 
 const blogPosts = [
   {
-    title: "AI Is Driving a 30% Surge in Data Budgets—What That Means for Your Team",
+    title: "Tableau Workbook Health Check: What to Audit Before You Migrate",
+    excerpt: "Unused calculated fields, circular dependencies, and nested LOD expressions discovered mid-migration will cost you double the time. Here's what a proper workbook audit checks and how to score overall health.",
+    date: "Mar 19, 2026",
+    category: "Data Quality",
+    readTime: "8 min read",
+    slug: "tableau-workbook-audit",
+    gradient: "from-orange-900 via-amber-900 to-slate-950",
+    accentColor: "text-amber-300",
+    icon: (
+      <svg className="w-20 h-20 opacity-20 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+      </svg>
+    )
+  },
+  {
+    title: "Migrating Tableau Calculated Fields to dbt: What Nobody Tells You",
+    excerpt: "The real pain of inheriting a Tableau workbook with 100+ calculated fields: LOD expressions, internal ID mappings, mixed aggregates, and a tool I built to make the migration manageable.",
+    date: "Mar 12, 2026",
+    category: "Data Infrastructure",
+    readTime: "8 min read",
+    slug: "tableau-to-dbt-migration",
+    gradient: "from-emerald-900 via-teal-900 to-blue-950",
+    accentColor: "text-emerald-300",
+    icon: (
+      <svg className="w-20 h-20 opacity-20 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+    )
+  },
+  {
+    title: "AI Is Driving a 30% Surge in Data Budgets. What That Means for Your Team.",
     excerpt: "dbt Labs' 2025 report found data budgets grew 30% year-over-year, with AI tooling as the #1 investment priority. Here's what that means for your organization.",
     date: "Mar 10, 2026",
     category: "Strategy",
@@ -61,21 +91,6 @@ const blogPosts = [
       </svg>
     )
   },
-  {
-    title: "How to Calculate ROI on Business Intelligence Investment",
-    excerpt: "BI projects often struggle to show value. This framework helps you quantify the impact and justify the investment to stakeholders.",
-    date: "Jan 15, 2026",
-    category: "Strategy",
-    readTime: "6 min read",
-    slug: "roi-business-intelligence",
-    gradient: "from-slate-900 via-blue-950 to-emerald-950",
-    accentColor: "text-emerald-400",
-    icon: (
-      <svg className="w-20 h-20 opacity-20 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-      </svg>
-    )
-  }
 ];
 
 export default function Blog() {

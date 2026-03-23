@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI Is Driving a 30% Surge in Data Budgets",
   description: "dbt Labs found data budgets grew 30% year-over-year in 2025, with AI tooling as the #1 investment priority. Here's what's driving the surge and what to do if you haven't caught up.",
+  keywords: ["ai data budgets 2025", "data team ai investment", "dbt labs state of data 2025", "analytics budget growth", "ai analytics spending", "data infrastructure investment 2025", "data budget planning"],
   alternates: { canonical: "https://klardata.com/blog/ai-data-budget-surge" },
   openGraph: {
     title: "AI Is Driving a 30% Surge in Data Budgets | Klardata",

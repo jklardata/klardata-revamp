@@ -8,6 +8,7 @@ import Methodology from "@/components/Methodology";
 import BeforeAfter from "@/components/BeforeAfter";
 import HowItWorks from "@/components/HowItWorks";
 import Services from "@/components/Services";
+import Solutions from "@/components/Solutions";
 import CaseStudies from "@/components/CaseStudies";
 import Testimonials from "@/components/Testimonials";
 import Blog from "@/components/Blog";
@@ -19,7 +20,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "services", "case-studies", "testimonials", "blog", "contact"];
+      const sections = ["home", "about", "services", "solutions", "case-studies", "testimonials", "blog", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -48,6 +49,7 @@ export default function Home() {
         <BeforeAfter />
         <HowItWorks />
         <Services />
+        <Solutions />
         <CaseStudies />
         <Testimonials />
         <Blog />

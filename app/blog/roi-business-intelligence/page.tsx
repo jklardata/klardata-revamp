@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How to Calculate ROI on Business Intelligence Investment",
   description: "Business intelligence projects struggle to show value. This framework helps you quantify impact, measure what matters, and justify the investment to stakeholders.",
+  keywords: ["bi roi calculation", "business intelligence roi", "how to measure bi value", "bi investment return", "analytics roi framework", "data analytics roi", "justify bi investment"],
   alternates: { canonical: "https://klardata.com/blog/roi-business-intelligence" },
   openGraph: {
     title: "How to Calculate ROI on Business Intelligence Investment | Klardata",

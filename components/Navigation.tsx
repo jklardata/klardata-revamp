@@ -23,6 +23,7 @@ export default function Navigation({ activeSection }: NavigationProps) {
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
     { id: "services", label: "Services" },
+    { id: "solutions", label: "Solutions" },
     { id: "case-studies", label: "Case Studies" },
     { id: "testimonials", label: "Testimonials" },
     { id: "blog", label: "Blog" },

@@ -4,6 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "5 Signs Your Business Needs a Data Warehouse",
   description: "Spreadsheets held you back long enough. Here's how to know it's time to upgrade to a cloud data warehouse like Snowflake, BigQuery, or Redshift.",
+  keywords: ["when to use a data warehouse", "data warehouse for small business", "snowflake vs spreadsheets", "bigquery small business", "cloud data warehouse benefits", "upgrade from spreadsheets", "data infrastructure upgrade"],
   alternates: { canonical: "https://klardata.com/blog/5-signs-business-needs-data-warehouse" },
   openGraph: {
     title: "5 Signs Your Business Needs a Data Warehouse | Klardata",
