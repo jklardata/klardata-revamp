@@ -15,5 +15,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/tableau-workbook-documentation`, lastModified: new Date("2026-03-15"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/blog/tableau-workbook-diff`, lastModified: new Date("2026-03-17"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/blog/tableau-workbook-audit`, lastModified: new Date("2026-03-19"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/blog/semantic-layer-metric-definitions`, lastModified: new Date("2026-03-24"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/blog/semantic-layer-access-control`, lastModified: new Date("2026-03-24"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/blog/semantic-layer-lineage-traceability`, lastModified: new Date("2026-03-24"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/blog/semantic-layer-agent-query-tolerance`, lastModified: new Date("2026-03-24"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/blog/semantic-layer-governance-maturity`, lastModified: new Date("2026-03-24"), changeFrequency: "monthly", priority: 0.8 },
   ];
 }
