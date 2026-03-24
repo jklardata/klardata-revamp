@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "What Does It Mean to Formally Define a Metric? (And Why It Matters for AI Agents)",
-  description: "Most teams think they have defined metrics. They don't. Here's what formal metric definition actually requires — grain, filters, aggregation logic, ownership, and versioning — and why agents will expose every gap.",
+  description: "Most teams think they have defined metrics. They don't. Here's what formal metric definition actually requires: grain, filters, aggregation logic, ownership, and versioning. And why agents will expose every gap.",
   keywords: ["semantic layer metric definition", "formal metric definition", "dbt metrics", "LookML metrics", "Cube metrics", "agentic semantic layer", "metric governance", "data mesh metrics", "business metric catalog"],
   alternates: { canonical: "https://klardata.com/blog/semantic-layer-metric-definitions" },
   openGraph: {
@@ -38,7 +38,7 @@ export default function Article() {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": "What Does It Mean to Formally Define a Metric? (And Why It Matters for AI Agents)",
-            "description": "Most teams think they have defined metrics. They don't. Here's what formal metric definition actually requires — grain, filters, aggregation logic, ownership, and versioning — and why agents will expose every gap.",
+            "description": "Most teams think they have defined metrics. They don't. Here's what formal metric definition actually requires: grain, filters, aggregation logic, ownership, and versioning. And why agents will expose every gap.",
             "datePublished": "2026-03-24T00:00:00Z",
             "dateModified": "2026-03-24T00:00:00Z",
             "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
@@ -105,7 +105,7 @@ export default function Article() {
                 The difference matters enormously right now. When humans work with metrics, they can ask clarifying questions, read surrounding context, and apply judgment. When an AI agent queries a metric, it can only work with what's explicitly codified. There is no ability to infer that "revenue" means recognized revenue for North America, excluding refunds, at a monthly grain. If that isn't written down somewhere a machine can read, the agent will compute something that looks like revenue but isn't.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                This article walks through what formal metric definition actually requires — the five components that separate a true definition from a shared assumption — and how governed semantic layer systems encode that definition in a form that both humans and agents can reliably use.
+                This article walks through what formal metric definition actually requires. The five components that separate a true definition from a shared assumption are covered in detail, along with how governed semantic layer systems encode that definition in a form that both humans and agents can reliably use.
               </p>
             </div>
 

@@ -235,10 +235,10 @@ export default function Article() {
               </p>
               <ul className="space-y-3 text-slate-400 text-sm mb-4">
                 {[
-                  "Phase 1 — Inventory: Catalog every table and column an agent currently accesses. This is your attack surface. Understanding it is prerequisite to reducing it.",
-                  "Phase 2 — Classification: Tag every column in the inventory as safe, sensitive, or PII. Use automated classifiers where possible to reduce manual effort. Treat any column with a name pattern matching email, phone, ssn, address, health, or similar as PII until proven otherwise.",
-                  "Phase 3 — Policy implementation: Implement column-level policies in your data warehouse for all columns classified as sensitive or PII. Test that agents can no longer access these columns directly. Document exceptions and the business justification for each.",
-                  "Phase 4 — Agent migration: Redirect agents to query through the semantic layer for all metric access. This removes direct warehouse access and enforces the semantic layer as the single enforcement point for all column and join access policies.",
+                  "Phase 1: Catalog every table and column an agent currently accesses. This is your attack surface. Understanding it is prerequisite to reducing it.",
+                  "Phase 2: Tag every column in the inventory as safe, sensitive, or PII. Use automated classifiers where possible to reduce manual effort. Treat any column with a name pattern matching email, phone, ssn, address, health, or similar as PII until proven otherwise.",
+                  "Phase 3: Implement column-level policies in your data warehouse for all columns classified as sensitive or PII. Test that agents can no longer access these columns directly. Document exceptions and the business justification for each.",
+                  "Phase 4: Redirect agents to query through the semantic layer for all metric access. This removes direct warehouse access and enforces the semantic layer as the single enforcement point for all column and join access policies.",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <span className="text-rose-500 mt-0.5 flex-shrink-0">→</span>
@@ -302,7 +302,7 @@ export default function Article() {
                 </div>
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                I work with data and analytics teams on semantic layer strategy, BI implementation, and agentic data readiness. I've seen the access control gaps that agents expose firsthand — and how to fix them.
+                I work with data and analytics teams on semantic layer strategy, BI implementation, and agentic data readiness. I've seen the access control gaps that agents expose firsthand, and I know how to fix them.
               </p>
               <Link href="/#contact" className="text-red-400 text-sm hover:text-red-300 transition-colors">
                 Work with Justin →

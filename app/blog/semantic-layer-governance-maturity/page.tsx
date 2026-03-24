@@ -119,7 +119,7 @@ export default function Article() {
                 The root cause is that governance without ownership is decoration. A policy that says "all metrics must have an owner" means nothing if the owner role carries no accountability, no operational responsibilities, and no consequence for non-compliance. A data catalog entry that says "this metric measures revenue" means nothing if nobody is responsible for keeping it accurate as the underlying calculation changes. Governance succeeds when it's tied to accountability, not just documentation.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                For agentic systems, the stakes are higher than for traditional BI governance. An ungoverned dashboard is seen by humans who can apply judgment to questionable numbers. An ungoverned agent produces outputs that may be trusted uncritically by downstream consumers — other automated systems, non-technical executives, or external reports. The velocity and scale of agent outputs amplify governance failures in ways that human-driven analytics does not.
+                For agentic systems, the stakes are higher than for traditional BI governance. An ungoverned dashboard is seen by humans who can apply judgment to questionable numbers. An ungoverned agent produces outputs that may be trusted uncritically by downstream consumers: other automated systems, non-technical executives, or external reports. The velocity and scale of agent outputs amplify governance failures in ways that human-driven analytics does not.
               </p>
             </div>
 
@@ -168,13 +168,13 @@ export default function Article() {
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8">
               <h2 className="text-2xl font-bold text-white mb-6">Semantic Layer Ownership: What a Governance Owner Does Day-to-Day</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Semantic layer governance requires at least one designated owner — a person or team responsible for the health and accuracy of the semantic layer as it relates to agent access. In smaller organizations, this is often a staff data engineer or analytics engineer who also has other responsibilities. In larger organizations, it may be a dedicated data governance function. In either case, the responsibilities are specific and operational, not ceremonial.
+                Semantic layer governance requires at least one designated owner: a person or team responsible for the health and accuracy of the semantic layer as it relates to agent access. In smaller organizations, this is often a staff data engineer or analytics engineer who also has other responsibilities. In larger organizations, it may be a dedicated data governance function. In either case, the responsibilities are specific and operational, not ceremonial.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
                 Day-to-day, a semantic layer governance owner does the following: reviews and approves requests to add or change metric definitions, monitors the metric catalog for definitions that are missing required components (owner, version, documentation), reviews agent query logs for anomalous behavior, communicates definition changes to downstream agent owners, and maintains the governance policy itself as the organization's use of agents evolves.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                The governance owner also serves as the escalation point for governance disputes — when two teams disagree about the correct definition of a metric, or when an agent owner wants direct warehouse access that the policy doesn't permit, the governance owner makes the decision and documents it. This decision-making authority is what distinguishes a genuine governance function from a documentation exercise. Without it, policies are suggestions, not constraints.
+                The governance owner also serves as the escalation point for governance disputes. When two teams disagree about the correct definition of a metric, or when an agent owner wants direct warehouse access that the policy doesn't permit, the governance owner makes the decision and documents it. This decision-making authority is what distinguishes a genuine governance function from a documentation exercise. Without it, policies are suggestions, not constraints.
               </p>
             </div>
 
@@ -182,7 +182,7 @@ export default function Article() {
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8">
               <h2 className="text-2xl font-bold text-white mb-6">Metric Approval Workflows: From "I Want to Add a Metric" to "Agents Can Query It"</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                A metric approval workflow is the process by which a new metric definition goes from a request to an approved, agent-queryable definition in the semantic layer. Without this process, metric definitions are added informally — someone adds a measure to a dbt model, it gets deployed without review, and agents start querying it before anyone has validated that the definition is correct, that it has an owner, or that the access policy is appropriate.
+                A metric approval workflow is the process by which a new metric definition goes from a request to an approved, agent-queryable definition in the semantic layer. Without this process, metric definitions are added informally: someone adds a measure to a dbt model, it gets deployed without review, and agents start querying it before anyone has validated that the definition is correct, that it has an owner, or that the access policy is appropriate.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
                 A well-designed metric approval workflow has five steps: proposal (the requester documents the metric's name, business purpose, and initial specification), technical review (a data engineer validates that the proposed grain, filters, and aggregation logic are implementable and don't duplicate an existing metric), business review (the proposed owner and relevant stakeholders confirm the definition is correct and matches business intent), policy review (the governance owner confirms the access classification, PII implications, and versioning plan), and deployment (the metric is added to the semantic layer, documented, and made available for agent queries).
@@ -202,7 +202,7 @@ export default function Article() {
                 Agent-specific contract terms include: semantic layer API stability commitments (the API will not introduce breaking changes without N days notice), definition version freeze periods (the metric definition at version N will remain valid and queryable for at least N months), schema change notification (downstream agent owners will be notified at least N days before a schema change that breaks current queries), and data quality guarantees (the underlying data passes defined quality tests at a specified rate, and the consumer is notified immediately when tests fail).
               </p>
               <p className="text-slate-300 leading-relaxed">
-                The enforcement mechanism for data contracts is the governance owner and the approval workflow. When a producer wants to make a change that violates the contract terms — for example, deprecating an API version before the committed end-of-life date — the change must go through the governance review process, which includes notifying all contract holders and giving them time to update their agent configurations. Without a contract framework, producers make changes at will and agent owners discover breakage after the fact.
+                The enforcement mechanism for data contracts is the governance owner and the approval workflow. When a producer wants to make a change that violates the contract terms (for example, deprecating an API version before the committed end-of-life date), the change must go through the governance review process, which includes notifying all contract holders and giving them time to update their agent configurations. Without a contract framework, producers make changes at will and agent owners discover breakage after the fact.
               </p>
             </div>
 
@@ -216,7 +216,7 @@ export default function Article() {
                 Being very confident in agent answers requires: formal metric definitions with all five components for every metric the agent queries; access controls that prevent the agent from accessing data it shouldn't; lineage that lets you trace any answer back to its source; quality monitoring that alerts before incorrect data reaches the agent; a stable, versioned semantic layer API; an approval workflow that ensures every metric has been validated; a governance owner who is actively monitoring agent behavior; and an audit log that records every query for after-the-fact review.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                Very few organizations have all of these in place today — and that's not a failure. It's the current state of a technology and practice that is maturing rapidly. The goal of a governance maturity assessment is not to identify failure but to identify the highest-leverage next steps. An organization that has formal metric definitions and lineage but lacks a governance policy and approval workflow should prioritize those organizational gaps. An organization that has governance processes but lacks lineage infrastructure should prioritize the technical gap.
+                Very few organizations have all of these in place today, and that's not a failure. It's the current state of a technology and practice that is maturing rapidly. The goal of a governance maturity assessment is not to identify failure but to identify the highest-leverage next steps. An organization that has formal metric definitions and lineage but lacks a governance policy and approval workflow should prioritize those organizational gaps. An organization that has governance processes but lacks lineage infrastructure should prioritize the technical gap.
               </p>
             </div>
 
@@ -224,13 +224,13 @@ export default function Article() {
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8">
               <h2 className="text-2xl font-bold text-white mb-6">Regulatory Audit Readiness: What Auditors Actually Ask</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Organizations in regulated industries — finance (SOX), healthcare (HIPAA), and organizations subject to GDPR or CCPA — are beginning to face questions from auditors about AI-generated analytics. These questions are not hypothetical. The audit questions tend to cluster around three themes: provenance (where did this number come from?), authorization (who authorized this system to access this data?), and accuracy (how do you know the number is correct?).
+                Organizations in regulated industries (finance under SOX, healthcare under HIPAA, and organizations subject to GDPR or CCPA) are beginning to face questions from auditors about AI-generated analytics. These questions are not hypothetical. The audit questions tend to cluster around three themes: provenance (where did this number come from?), authorization (who authorized this system to access this data?), and accuracy (how do you know the number is correct?).
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
                 Provenance questions require lineage infrastructure: the ability to trace any AI-generated output back to its source data through every transformation step. Authorization questions require access control documentation: for every piece of data an agent accessed, what policy authorized that access, who approved the policy, and when. Accuracy questions require quality monitoring and testing records: what tests run against the data the agent queries, what's the current pass rate, and what's the process for investigating failures.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                The organizations that are best positioned for these audits are those that treat AI data governance as a first-class responsibility, not an afterthought. They have designated owners who can speak to governance decisions. They have documented policies that specify how agents operate. They have audit logs that can answer specific questions about specific agent queries. They have tested, monitored data pipelines that feed the semantic layer. These requirements are substantial, but they're knowable and buildable — the challenge is starting before the auditor arrives.
+                The organizations that are best positioned for these audits are those that treat AI data governance as a first-class responsibility, not an afterthought. They have designated owners who can speak to governance decisions. They have documented policies that specify how agents operate. They have audit logs that can answer specific questions about specific agent queries. They have tested, monitored data pipelines that feed the semantic layer. These requirements are substantial, but they're knowable and buildable. The challenge is starting before the auditor arrives.
               </p>
             </div>
 
@@ -249,7 +249,7 @@ export default function Article() {
                     stage: "Stage 2",
                     title: "Designate owners and write the policy",
                     color: "text-amber-400 bg-amber-400/10 border-amber-400/30",
-                    desc: "Designate a governance owner with explicit responsibilities. Write a data governance policy for AI agent access using the template outline from earlier in this article. Provision separate service accounts for all existing agents. Enable audit logging at the warehouse and semantic layer level. These organizational steps don't require new tooling — they require decisions and commitments."
+                    desc: "Designate a governance owner with explicit responsibilities. Write a data governance policy for AI agent access using the template outline from earlier in this article. Provision separate service accounts for all existing agents. Enable audit logging at the warehouse and semantic layer level. These organizational steps don't require new tooling. They require decisions and commitments."
                   },
                   {
                     stage: "Stage 3",
@@ -329,7 +329,7 @@ export default function Article() {
                 </div>
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                I work with data and analytics teams on semantic layer strategy, governance design, and agentic readiness. Governance maturity is the dimension most organizations underestimate — and the one that matters most when something goes wrong.
+                I work with data and analytics teams on semantic layer strategy, governance design, and agentic readiness. Governance maturity is the dimension most organizations underestimate, and the one that matters most when something goes wrong.
               </p>
               <Link href="/#contact" className="text-amber-400 text-sm hover:text-amber-300 transition-colors">
                 Work with Justin →
