@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "Is Your Data Stack Built for 500 Queries in 10 Minutes? Designing for Agentic Query Patterns",
@@ -370,6 +371,7 @@ export default function Article() {
           </aside>
         </div>
       </div>
+      <AuthorBio />
     </div>
   );
 }

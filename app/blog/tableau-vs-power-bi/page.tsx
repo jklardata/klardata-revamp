@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "Tableau vs. Power BI: An Honest 2026 Comparison",
@@ -265,6 +266,7 @@ export default function Article() {
           </div>
         </div>
       </footer>
+      <AuthorBio />
     </div>
   );
 }

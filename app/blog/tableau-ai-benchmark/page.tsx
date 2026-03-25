@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found.",
@@ -419,6 +420,7 @@ export default function Article() {
 
         </div>
       </div>
+      <AuthorBio />
     </div>
   );
 }

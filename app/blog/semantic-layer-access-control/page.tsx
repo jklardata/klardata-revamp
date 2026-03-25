@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "Why Table-Level Permissions Aren't Enough for AI Agents",
@@ -362,6 +363,7 @@ export default function Article() {
           </aside>
         </div>
       </div>
+      <AuthorBio />
     </div>
   );
 }

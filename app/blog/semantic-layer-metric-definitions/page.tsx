@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "What Does It Mean to Formally Define a Metric? (And Why It Matters for AI Agents)",
@@ -350,6 +351,7 @@ export default function Article() {
           </aside>
         </div>
       </div>
+      <AuthorBio />
     </div>
   );
 }

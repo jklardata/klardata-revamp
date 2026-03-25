@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "5 Signs Your Business Is Ready for a BI Implementation",
@@ -269,6 +270,7 @@ export default function Article() {
           </div>
         </div>
       </footer>
+      <AuthorBio />
     </div>
   );
 }

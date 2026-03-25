@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "How to Compare Two Tableau Workbooks (And Actually See What Changed)",
@@ -359,6 +360,7 @@ export default function Article() {
           </aside>
         </div>
       </div>
+      <AuthorBio />
     </div>
   );
 }

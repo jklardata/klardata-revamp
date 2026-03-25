@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "Migrating Tableau Calculated Fields to dbt: What Nobody Tells You",
@@ -340,6 +341,7 @@ export default function Article() {
           </aside>
         </div>
       </div>
+      <AuthorBio />
     </div>
   );
 }

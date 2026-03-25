@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "AI Is Driving a 30% Surge in Data Budgets",
@@ -350,6 +351,7 @@ export default function Article() {
 
         </div>
       </div>
+      <AuthorBio />
     </div>
   );
 }

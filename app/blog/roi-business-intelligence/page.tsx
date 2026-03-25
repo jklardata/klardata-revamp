@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "How to Calculate ROI on Business Intelligence Investment",
@@ -266,6 +267,7 @@ export default function Article() {
           </div>
         </div>
       </footer>
+      <AuthorBio />
     </div>
   );
 }

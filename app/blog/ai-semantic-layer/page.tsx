@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "The Semantic Layer: The Missing Link for AI-Ready Analytics",
@@ -351,6 +352,7 @@ export default function Article() {
 
         </div>
       </div>
+      <AuthorBio />
     </div>
   );
 }
