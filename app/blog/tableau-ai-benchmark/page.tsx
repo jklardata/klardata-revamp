@@ -195,19 +195,14 @@ export default function Article() {
               </p>
 
               {/* Score summary */}
-              <div className="grid sm:grid-cols-2 gap-4 mb-8">
-                {[
-                  { model: "Claude Sonnet 4", score: "49 / 59", pct: "83%", color: "from-purple-900/60 to-slate-800/60", border: "border-purple-400/20", accent: "text-purple-300" },
-                  { model: "GPT-4o", score: "48 / 59", pct: "81%", color: "from-green-900/60 to-slate-800/60", border: "border-green-400/20", accent: "text-green-300" },
-                  { model: "Gemini 1.5 Pro", score: "47 / 59", pct: "80%", color: "from-blue-900/60 to-slate-800/60", border: "border-blue-400/20", accent: "text-blue-300" },
-                  { model: "Claude Haiku 4.5", score: "46 / 59", pct: "78%", color: "from-amber-900/60 to-slate-800/60", border: "border-amber-400/20", accent: "text-amber-300" },
-                ].map((m) => (
-                  <div key={m.model} className={`bg-gradient-to-br ${m.color} border ${m.border} rounded-xl p-5`}>
-                    <div className={`text-xs font-bold uppercase tracking-widest ${m.accent} mb-2`}>{m.model}</div>
-                    <div className="text-3xl font-black text-white">{m.pct}</div>
-                    <div className="text-slate-400 text-sm mt-1">{m.score} pts</div>
-                  </div>
-                ))}
+              <div className="mb-8">
+                <Image
+                  src="/photos/model_results.png"
+                  alt="Model benchmark results: Claude Sonnet 4 83%, GPT-4o 81%, Gemini 1.5 Pro 80%, Claude Haiku 4.5 78%"
+                  width={900}
+                  height={400}
+                  className="rounded-xl border border-white/10 w-full"
+                />
               </div>
 
               <p className="text-slate-300 leading-relaxed mb-6">
