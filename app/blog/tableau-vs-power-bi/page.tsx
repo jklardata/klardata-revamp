@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Tableau vs. Power BI: An Honest 2026 Comparison",
   description: "An honest comparison of Tableau vs. Power BI in 2026—costs, capabilities, licensing, and which business intelligence platform fits your team's needs.",
   keywords: ["tableau vs power bi 2026", "tableau vs power bi cost", "power bi vs tableau comparison", "tableau vs power bi features", "which bi tool to use", "tableau vs microsoft power bi", "best business intelligence tool 2026"],
-  alternates: { canonical: "https://klardata.com/blog/tableau-vs-power-bi" },
+  alternates: { canonical: "https://www.klardata.com/blog/tableau-vs-power-bi" },
   openGraph: {
     title: "Tableau vs. Power BI: An Honest 2026 Comparison | Klardata",
     description: "Costs, capabilities, licensing, and which business intelligence platform fits your team's needs. A practitioner's honest take.",
-    url: "https://klardata.com/blog/tableau-vs-power-bi",
+    url: "https://www.klardata.com/blog/tableau-vs-power-bi",
     type: "article",
     publishedTime: "2026-01-28T00:00:00Z",
     authors: ["Justin Leu"],
@@ -40,10 +40,10 @@ export default function Article() {
             "description": "An honest comparison of Tableau vs. Power BI in 2026—costs, capabilities, licensing, and which business intelligence platform fits your team's needs.",
             "datePublished": "2026-01-28T00:00:00Z",
             "dateModified": "2026-01-28T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/tableau-vs-power-bi",
-            "mainEntityOfPage": "https://klardata.com/blog/tableau-vs-power-bi",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/tableau-vs-power-bi",
+            "mainEntityOfPage": "https://www.klardata.com/blog/tableau-vs-power-bi",
           }),
         }}
       />

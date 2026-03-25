@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "How to Document a Tableau Workbook (Without Doing It Manually)",
   description: "Tableau has no built-in documentation. Here's what a properly documented workbook looks like, how to generate it automatically from a .twb file, and why it matters before any migration.",
   keywords: ["tableau workbook documentation generator", "auto document tableau workbook", "document tableau calculated fields", "tableau data source documentation", "read twb file without tableau", "open twb file online", "tableau workbook metadata", "tableau documentation tool"],
-  alternates: { canonical: "https://klardata.com/blog/tableau-workbook-documentation" },
+  alternates: { canonical: "https://www.klardata.com/blog/tableau-workbook-documentation" },
   openGraph: {
     title: "How to Document a Tableau Workbook (Without Doing It Manually) | Klardata",
     description: "Tableau has no built-in documentation. Here's what a properly documented workbook looks like and how to generate it automatically from a .twb file.",
-    url: "https://klardata.com/blog/tableau-workbook-documentation",
+    url: "https://www.klardata.com/blog/tableau-workbook-documentation",
     type: "article",
     publishedTime: "2026-03-19T00:00:00Z",
     authors: ["Justin Leu"],
@@ -40,10 +40,10 @@ export default function Article() {
             "description": "Tableau has no built-in documentation. Here's what a properly documented workbook looks like and how to generate it automatically.",
             "datePublished": "2026-03-19T00:00:00Z",
             "dateModified": "2026-03-19T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/tableau-workbook-documentation",
-            "mainEntityOfPage": "https://klardata.com/blog/tableau-workbook-documentation",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/tableau-workbook-documentation",
+            "mainEntityOfPage": "https://www.klardata.com/blog/tableau-workbook-documentation",
           }),
         }}
       />

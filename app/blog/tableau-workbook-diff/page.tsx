@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "How to Compare Two Tableau Workbooks (And Actually See What Changed)",
   description: "Tableau has no native version comparison. Here's how to diff two .twb files: calculated fields, parameters, data sources, and sheets, with line-level formula changes. Free, browser-based.",
   keywords: ["tableau workbook diff tool", "compare tableau workbooks", "tableau workbook version comparison", "compare twb files", "tableau formula diff", "tableau twb diff", "tableau workbook compare tool", "tableau calculated field changes"],
-  alternates: { canonical: "https://klardata.com/blog/tableau-workbook-diff" },
+  alternates: { canonical: "https://www.klardata.com/blog/tableau-workbook-diff" },
   openGraph: {
     title: "How to Compare Two Tableau Workbooks (And Actually See What Changed) | Klardata",
     description: "Tableau has no native version comparison. Here's how to diff two .twb files with line-level formula changes. Free, browser-based.",
-    url: "https://klardata.com/blog/tableau-workbook-diff",
+    url: "https://www.klardata.com/blog/tableau-workbook-diff",
     type: "article",
     publishedTime: "2026-03-19T00:00:00Z",
     authors: ["Justin Leu"],
@@ -40,10 +40,10 @@ export default function Article() {
             "description": "Tableau has no native version comparison. Here's how to diff two .twb files with line-level formula changes.",
             "datePublished": "2026-03-19T00:00:00Z",
             "dateModified": "2026-03-19T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/tableau-workbook-diff",
-            "mainEntityOfPage": "https://klardata.com/blog/tableau-workbook-diff",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/tableau-workbook-diff",
+            "mainEntityOfPage": "https://www.klardata.com/blog/tableau-workbook-diff",
           }),
         }}
       />

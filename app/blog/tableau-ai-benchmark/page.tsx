@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   title: "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found.",
   description: "A structured benchmark of GPT-4o, Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5 across 20 Tableau calculated field tasks covering LOD expressions, date logic, table calculations, and conditional logic.",
   keywords: ["tableau ai benchmark", "ai tableau calculated fields", "gpt4o tableau", "gemini tableau", "claude tableau", "tableau lod expressions ai", "ai analytics tools", "tableau ai comparison"],
-  alternates: { canonical: "https://klardata.com/blog/tableau-ai-benchmark" },
+  alternates: { canonical: "https://www.klardata.com/blog/tableau-ai-benchmark" },
   openGraph: {
     title: "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found. | Klardata",
     description: "A structured benchmark of GPT-4o, Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5 across 20 Tableau calculated field tasks.",
-    url: "https://klardata.com/blog/tableau-ai-benchmark",
+    url: "https://www.klardata.com/blog/tableau-ai-benchmark",
     type: "article",
     publishedTime: "2026-04-01T00:00:00Z",
     authors: ["Justin Leu"],
@@ -42,10 +42,10 @@ export default function Article() {
             "description": "A structured benchmark of GPT-4o, Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5 across 20 Tableau calculated field tasks.",
             "datePublished": "2026-04-01T00:00:00Z",
             "dateModified": "2026-04-01T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/tableau-ai-benchmark",
-            "mainEntityOfPage": "https://klardata.com/blog/tableau-ai-benchmark",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/tableau-ai-benchmark",
+            "mainEntityOfPage": "https://www.klardata.com/blog/tableau-ai-benchmark",
           }),
         }}
       />

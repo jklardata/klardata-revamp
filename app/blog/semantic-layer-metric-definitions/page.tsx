@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "What Does It Mean to Formally Define a Metric? (And Why It Matters for AI Agents)",
   description: "Most teams think they have defined metrics. They don't. Here's what formal metric definition actually requires: grain, filters, aggregation logic, ownership, and versioning. And why agents will expose every gap.",
   keywords: ["semantic layer metric definition", "formal metric definition", "dbt metrics", "LookML metrics", "Cube metrics", "agentic semantic layer", "metric governance", "data mesh metrics", "business metric catalog"],
-  alternates: { canonical: "https://klardata.com/blog/semantic-layer-metric-definitions" },
+  alternates: { canonical: "https://www.klardata.com/blog/semantic-layer-metric-definitions" },
   openGraph: {
     title: "What Does It Mean to Formally Define a Metric? (And Why It Matters for AI Agents) | Klardata",
     description: "Most teams think they have defined metrics. They don't. Here's what formal metric definition actually requires and why AI agents will expose every gap.",
-    url: "https://klardata.com/blog/semantic-layer-metric-definitions",
+    url: "https://www.klardata.com/blog/semantic-layer-metric-definitions",
     type: "article",
     publishedTime: "2026-03-24T00:00:00Z",
     authors: ["Justin Leu"],
@@ -42,10 +42,10 @@ export default function Article() {
             "description": "Most teams think they have defined metrics. They don't. Here's what formal metric definition actually requires: grain, filters, aggregation logic, ownership, and versioning. And why agents will expose every gap.",
             "datePublished": "2026-03-24T00:00:00Z",
             "dateModified": "2026-03-24T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/semantic-layer-metric-definitions",
-            "mainEntityOfPage": "https://klardata.com/blog/semantic-layer-metric-definitions",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/semantic-layer-metric-definitions",
+            "mainEntityOfPage": "https://www.klardata.com/blog/semantic-layer-metric-definitions",
           }),
         }}
       />

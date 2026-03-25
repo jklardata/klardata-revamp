@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Why Table-Level Permissions Aren't Enough for AI Agents",
   description: "Granting agents table-level access is like giving someone your house key when they only need to read your mail. Here's what fine-grained access control looks like for agentic semantic layer access.",
   keywords: ["semantic layer access control", "column-level security", "row-level security", "PII tagging", "AI agent permissions", "data governance access", "Cube access control", "LookML access filters", "agentic data security"],
-  alternates: { canonical: "https://klardata.com/blog/semantic-layer-access-control" },
+  alternates: { canonical: "https://www.klardata.com/blog/semantic-layer-access-control" },
   openGraph: {
     title: "Why Table-Level Permissions Aren't Enough for AI Agents | Klardata",
     description: "Granting agents table-level access is like giving someone your house key when they only need to read your mail. Here's what fine-grained access control actually looks like.",
-    url: "https://klardata.com/blog/semantic-layer-access-control",
+    url: "https://www.klardata.com/blog/semantic-layer-access-control",
     type: "article",
     publishedTime: "2026-03-24T00:00:00Z",
     authors: ["Justin Leu"],
@@ -42,10 +42,10 @@ export default function Article() {
             "description": "Granting agents table-level access is like giving someone your house key when they only need to read your mail. Here's what fine-grained access control looks like for agentic semantic layer access.",
             "datePublished": "2026-03-24T00:00:00Z",
             "dateModified": "2026-03-24T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/semantic-layer-access-control",
-            "mainEntityOfPage": "https://klardata.com/blog/semantic-layer-access-control",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/semantic-layer-access-control",
+            "mainEntityOfPage": "https://www.klardata.com/blog/semantic-layer-access-control",
           }),
         }}
       />

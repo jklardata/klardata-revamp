@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Data Lineage for AI Agents: Why Provenance Is Now a Governance Requirement",
   description: "When a human analyst gets a number wrong, you can ask them how they calculated it. When an agent gets a number wrong, you need lineage. Here's what end-to-end traceability requires.",
   keywords: ["data lineage AI agents", "column-level lineage", "dbt lineage", "data catalog lineage", "data observability", "Monte Carlo data", "impact analysis dbt", "agentic data governance", "data provenance"],
-  alternates: { canonical: "https://klardata.com/blog/semantic-layer-lineage-traceability" },
+  alternates: { canonical: "https://www.klardata.com/blog/semantic-layer-lineage-traceability" },
   openGraph: {
     title: "Data Lineage for AI Agents: Why Provenance Is Now a Governance Requirement | Klardata",
     description: "When a human analyst gets a number wrong, you can ask them. When an agent gets a number wrong, you need lineage. Here's what end-to-end traceability requires.",
-    url: "https://klardata.com/blog/semantic-layer-lineage-traceability",
+    url: "https://www.klardata.com/blog/semantic-layer-lineage-traceability",
     type: "article",
     publishedTime: "2026-03-24T00:00:00Z",
     authors: ["Justin Leu"],
@@ -42,10 +42,10 @@ export default function Article() {
             "description": "When a human analyst gets a number wrong, you can ask them how they calculated it. When an agent gets a number wrong, you need lineage. Here's what end-to-end traceability requires.",
             "datePublished": "2026-03-24T00:00:00Z",
             "dateModified": "2026-03-24T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/semantic-layer-lineage-traceability",
-            "mainEntityOfPage": "https://klardata.com/blog/semantic-layer-lineage-traceability",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/semantic-layer-lineage-traceability",
+            "mainEntityOfPage": "https://www.klardata.com/blog/semantic-layer-lineage-traceability",
           }),
         }}
       />

@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Is Your Data Stack Built for 500 Queries in 10 Minutes? Designing for Agentic Query Patterns",
   description: "Human analysts run 5-10 queries per session. Agents run hundreds. Your warehouse cost governance, schema stability, and query observability were not designed for this. Here's what needs to change.",
   keywords: ["agentic query patterns", "semantic layer agent queries", "Snowflake resource monitors", "BigQuery slot limits", "Cube semantic layer", "query observability", "data warehouse cost governance", "AI agent data infrastructure", "semantic layer versioning"],
-  alternates: { canonical: "https://klardata.com/blog/semantic-layer-agent-query-tolerance" },
+  alternates: { canonical: "https://www.klardata.com/blog/semantic-layer-agent-query-tolerance" },
   openGraph: {
     title: "Is Your Data Stack Built for 500 Queries in 10 Minutes? | Klardata",
     description: "Human analysts run 5-10 queries per session. Agents run hundreds. Your data stack wasn't designed for this. Here's what needs to change.",
-    url: "https://klardata.com/blog/semantic-layer-agent-query-tolerance",
+    url: "https://www.klardata.com/blog/semantic-layer-agent-query-tolerance",
     type: "article",
     publishedTime: "2026-03-24T00:00:00Z",
     authors: ["Justin Leu"],
@@ -42,10 +42,10 @@ export default function Article() {
             "description": "Human analysts run 5-10 queries per session. Agents run hundreds. Your warehouse cost governance, schema stability, and query observability were not designed for this. Here's what needs to change.",
             "datePublished": "2026-03-24T00:00:00Z",
             "dateModified": "2026-03-24T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/semantic-layer-agent-query-tolerance",
-            "mainEntityOfPage": "https://klardata.com/blog/semantic-layer-agent-query-tolerance",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/semantic-layer-agent-query-tolerance",
+            "mainEntityOfPage": "https://www.klardata.com/blog/semantic-layer-agent-query-tolerance",
           }),
         }}
       />

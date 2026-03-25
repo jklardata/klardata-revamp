@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "How to Calculate ROI on Business Intelligence Investment",
   description: "Business intelligence projects struggle to show value. This framework helps you quantify impact, measure what matters, and justify the investment to stakeholders.",
   keywords: ["bi roi calculation", "business intelligence roi", "how to measure bi value", "bi investment return", "analytics roi framework", "data analytics roi", "justify bi investment"],
-  alternates: { canonical: "https://klardata.com/blog/roi-business-intelligence" },
+  alternates: { canonical: "https://www.klardata.com/blog/roi-business-intelligence" },
   openGraph: {
     title: "How to Calculate ROI on Business Intelligence Investment | Klardata",
     description: "Business intelligence projects struggle to show value. This framework helps you quantify impact and justify the investment to stakeholders.",
-    url: "https://klardata.com/blog/roi-business-intelligence",
+    url: "https://www.klardata.com/blog/roi-business-intelligence",
     type: "article",
     publishedTime: "2026-01-15T00:00:00Z",
     authors: ["Justin Leu"],
@@ -40,10 +40,10 @@ export default function Article() {
             "description": "Business intelligence projects struggle to show value. This framework helps you quantify impact, measure what matters, and justify the investment to stakeholders.",
             "datePublished": "2026-01-15T00:00:00Z",
             "dateModified": "2026-01-15T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/roi-business-intelligence",
-            "mainEntityOfPage": "https://klardata.com/blog/roi-business-intelligence",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/roi-business-intelligence",
+            "mainEntityOfPage": "https://www.klardata.com/blog/roi-business-intelligence",
           }),
         }}
       />

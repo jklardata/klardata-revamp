@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Migrating Tableau Calculated Fields to dbt: What Nobody Tells You",
   description: "The real pain of inheriting a Tableau workbook with 100+ calculated fields and migrating that logic to dbt — and a tool I built to make the hard parts faster.",
   keywords: ["tableau to dbt migration", "tableau calculated fields to sql", "migrate tableau to dbt", "tableau dbt conversion", "tableau analytics engineering", "twb to dbt", "tableau calculated fields dbt models"],
-  alternates: { canonical: "https://klardata.com/blog/tableau-to-dbt-migration" },
+  alternates: { canonical: "https://www.klardata.com/blog/tableau-to-dbt-migration" },
   openGraph: {
     title: "Migrating Tableau Calculated Fields to dbt: What Nobody Tells You | Klardata",
     description: "The real pain of inheriting a Tableau workbook with 100+ calculated fields and migrating that logic to dbt.",
-    url: "https://klardata.com/blog/tableau-to-dbt-migration",
+    url: "https://www.klardata.com/blog/tableau-to-dbt-migration",
     type: "article",
     publishedTime: "2026-03-12T00:00:00Z",
     authors: ["Justin Leu"],
@@ -40,10 +40,10 @@ export default function Article() {
             "description": "The real pain of inheriting a Tableau workbook with 100+ calculated fields and migrating that logic to dbt.",
             "datePublished": "2026-03-12T00:00:00Z",
             "dateModified": "2026-03-12T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/tableau-to-dbt-migration",
-            "mainEntityOfPage": "https://klardata.com/blog/tableau-to-dbt-migration",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/tableau-to-dbt-migration",
+            "mainEntityOfPage": "https://www.klardata.com/blog/tableau-to-dbt-migration",
           }),
         }}
       />

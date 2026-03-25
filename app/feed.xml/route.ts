@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const SITE_URL = "https://klardata.com";
+const SITE_URL = "https://www.klardata.com";
 
 const articles = [
   {

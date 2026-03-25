@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "5 Signs Your Business Is Ready for a BI Implementation",
   description: "Most businesses know they need better data, but not every business is ready to implement BI. Here are five clear signals that tell you the timing is right.",
   keywords: ["bi implementation checklist", "business intelligence readiness", "when to implement bi", "business intelligence planning", "bi project readiness", "is my business ready for bi", "bi implementation signs"],
-  alternates: { canonical: "https://klardata.com/blog/bi-implementation-ready" },
+  alternates: { canonical: "https://www.klardata.com/blog/bi-implementation-ready" },
   openGraph: {
     title: "5 Signs Your Business Is Ready for a BI Implementation | Klardata",
     description: "Most businesses know they need better data, but not every business is ready to implement BI. Here are five clear signals the timing is right.",
-    url: "https://klardata.com/blog/bi-implementation-ready",
+    url: "https://www.klardata.com/blog/bi-implementation-ready",
     type: "article",
     publishedTime: "2026-02-25T00:00:00Z",
     authors: ["Justin Leu"],
@@ -40,10 +40,10 @@ export default function Article() {
             "description": "Most businesses know they need better data, but not every business is ready to implement BI. Here are five clear signals that tell you the timing is right.",
             "datePublished": "2026-02-25T00:00:00Z",
             "dateModified": "2026-02-25T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/bi-implementation-ready",
-            "mainEntityOfPage": "https://klardata.com/blog/bi-implementation-ready",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/bi-implementation-ready",
+            "mainEntityOfPage": "https://www.klardata.com/blog/bi-implementation-ready",
           }),
         }}
       />

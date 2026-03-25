@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Tableau Workbook Health Check: What to Audit Before You Migrate",
   description: "Before you migrate a Tableau workbook to dbt or Power BI, audit it. Unused fields, circular dependencies, nested LODs, and deep nesting will cost you double the time if you find them mid-migration.",
   keywords: ["tableau workbook audit tool", "tableau workbook health check", "tableau unused fields checker", "tableau workbook complexity analyzer", "tableau calculated field dependencies", "tableau workbook optimization", "tableau performance audit", "tableau governance"],
-  alternates: { canonical: "https://klardata.com/blog/tableau-workbook-audit" },
+  alternates: { canonical: "https://www.klardata.com/blog/tableau-workbook-audit" },
   openGraph: {
     title: "Tableau Workbook Health Check: What to Audit Before You Migrate | Klardata",
     description: "Unused fields, circular dependencies, and nested LODs will cost you double the time if found mid-migration. Audit your Tableau workbook first.",
-    url: "https://klardata.com/blog/tableau-workbook-audit",
+    url: "https://www.klardata.com/blog/tableau-workbook-audit",
     type: "article",
     publishedTime: "2026-03-19T00:00:00Z",
     authors: ["Justin Leu"],
@@ -40,10 +40,10 @@ export default function Article() {
             "description": "Before migrating a Tableau workbook, audit it for unused fields, circular dependencies, nested LODs, and complexity issues that will derail your migration.",
             "datePublished": "2026-03-19T00:00:00Z",
             "dateModified": "2026-03-19T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/tableau-workbook-audit",
-            "mainEntityOfPage": "https://klardata.com/blog/tableau-workbook-audit",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/tableau-workbook-audit",
+            "mainEntityOfPage": "https://www.klardata.com/blog/tableau-workbook-audit",
           }),
         }}
       />

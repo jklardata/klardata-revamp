@@ -5,11 +5,11 @@ export const metadata: Metadata = {
   title: "Blog & Insights — Data, BI, and Analytics",
   description: "Practical guides on data strategy, business intelligence, data warehousing, and making better decisions with your data. Written by Justin Leu, BI consultant with 17+ years experience.",
   keywords: ["data analytics blog", "business intelligence articles", "data strategy guides", "BI consulting insights", "tableau dbt analytics", "data warehouse guides", "analytics engineering"],
-  alternates: { canonical: "https://klardata.com/blog" },
+  alternates: { canonical: "https://www.klardata.com/blog" },
   openGraph: {
     title: "Blog & Insights — Data, BI, and Analytics | Klardata",
     description: "Practical guides on data strategy, business intelligence, and analytics. Written by Justin Leu, BI consultant with 17+ years experience.",
-    url: "https://klardata.com/blog",
+    url: "https://www.klardata.com/blog",
     type: "website",
   },
   twitter: {

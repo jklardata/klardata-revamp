@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "The Organizational Side of Semantic Layer Governance: Policies, Owners, and Audit Trails",
   description: "Technical infrastructure isn't enough. Agentic semantic layer governance requires policies, designated owners, approval workflows, and audit trails. Here's what governance maturity actually looks like.",
   keywords: ["semantic layer governance", "AI data governance policy", "data governance maturity", "metric approval workflow", "data contracts agents", "agentic governance", "AI governance policy", "semantic layer ownership", "data governance audit trail"],
-  alternates: { canonical: "https://klardata.com/blog/semantic-layer-governance-maturity" },
+  alternates: { canonical: "https://www.klardata.com/blog/semantic-layer-governance-maturity" },
   openGraph: {
     title: "The Organizational Side of Semantic Layer Governance | Klardata",
     description: "Technical infrastructure isn't enough. Agentic semantic layer governance requires policies, owners, approval workflows, and audit trails.",
-    url: "https://klardata.com/blog/semantic-layer-governance-maturity",
+    url: "https://www.klardata.com/blog/semantic-layer-governance-maturity",
     type: "article",
     publishedTime: "2026-03-24T00:00:00Z",
     authors: ["Justin Leu"],
@@ -42,10 +42,10 @@ export default function Article() {
             "description": "Technical infrastructure isn't enough. Agentic semantic layer governance requires policies, designated owners, approval workflows, and audit trails. Here's what governance maturity actually looks like.",
             "datePublished": "2026-03-24T00:00:00Z",
             "dateModified": "2026-03-24T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/semantic-layer-governance-maturity",
-            "mainEntityOfPage": "https://klardata.com/blog/semantic-layer-governance-maturity",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/semantic-layer-governance-maturity",
+            "mainEntityOfPage": "https://www.klardata.com/blog/semantic-layer-governance-maturity",
           }),
         }}
       />

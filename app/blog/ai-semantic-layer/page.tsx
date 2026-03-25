@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "The Semantic Layer: The Missing Link for AI-Ready Analytics",
   description: "How the semantic layer is evolving with AI, why legacy OLAP systems fall short, and which modern tools are redefining how organizations make sense of their data.",
   keywords: ["semantic layer ai", "dbt semantic layer", "metricflow semantic layer", "ai ready analytics", "semantic layer tools 2025", "cube data semantic layer", "looker semantic layer", "headless bi"],
-  alternates: { canonical: "https://klardata.com/blog/ai-semantic-layer" },
+  alternates: { canonical: "https://www.klardata.com/blog/ai-semantic-layer" },
   openGraph: {
     title: "The Semantic Layer: The Missing Link for AI-Ready Analytics | Klardata",
     description: "How the semantic layer is evolving with AI, why legacy OLAP systems fall short, and which modern tools are redefining analytics.",
-    url: "https://klardata.com/blog/ai-semantic-layer",
+    url: "https://www.klardata.com/blog/ai-semantic-layer",
     type: "article",
     publishedTime: "2026-03-04T00:00:00Z",
     authors: ["Justin Leu"],
@@ -40,10 +40,10 @@ export default function Article() {
             "description": "How the semantic layer is evolving with AI, why legacy OLAP systems fall short, and which modern tools are redefining how organizations make sense of their data.",
             "datePublished": "2026-03-04T00:00:00Z",
             "dateModified": "2026-03-04T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/ai-semantic-layer",
-            "mainEntityOfPage": "https://klardata.com/blog/ai-semantic-layer",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/ai-semantic-layer",
+            "mainEntityOfPage": "https://www.klardata.com/blog/ai-semantic-layer",
           }),
         }}
       />

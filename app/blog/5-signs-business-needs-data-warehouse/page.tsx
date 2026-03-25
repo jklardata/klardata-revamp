@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "5 Signs Your Business Needs a Data Warehouse",
   description: "Spreadsheets held you back long enough. Here's how to know it's time to upgrade to a cloud data warehouse like Snowflake, BigQuery, or Redshift.",
   keywords: ["when to use a data warehouse", "data warehouse for small business", "snowflake vs spreadsheets", "bigquery small business", "cloud data warehouse benefits", "upgrade from spreadsheets", "data infrastructure upgrade"],
-  alternates: { canonical: "https://klardata.com/blog/5-signs-business-needs-data-warehouse" },
+  alternates: { canonical: "https://www.klardata.com/blog/5-signs-business-needs-data-warehouse" },
   openGraph: {
     title: "5 Signs Your Business Needs a Data Warehouse | Klardata",
     description: "Spreadsheets held you back long enough. Here's how to know it's time to upgrade to a cloud data warehouse like Snowflake, BigQuery, or Redshift.",
-    url: "https://klardata.com/blog/5-signs-business-needs-data-warehouse",
+    url: "https://www.klardata.com/blog/5-signs-business-needs-data-warehouse",
     type: "article",
     publishedTime: "2026-02-05T00:00:00Z",
     authors: ["Justin Leu"],
@@ -40,10 +40,10 @@ export default function Article() {
             "description": "Spreadsheets held you back long enough. Here's how to know it's time to upgrade to a cloud data warehouse like Snowflake, BigQuery, or Redshift.",
             "datePublished": "2026-02-05T00:00:00Z",
             "dateModified": "2026-02-05T00:00:00Z",
-            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
-            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://klardata.com" },
-            "url": "https://klardata.com/blog/5-signs-business-needs-data-warehouse",
-            "mainEntityOfPage": "https://klardata.com/blog/5-signs-business-needs-data-warehouse",
+            "author": { "@type": "Person", "name": "Justin Leu", "url": "https://www.klardata.com" },
+            "publisher": { "@type": "Organization", "name": "Klardata", "url": "https://www.klardata.com" },
+            "url": "https://www.klardata.com/blog/5-signs-business-needs-data-warehouse",
+            "mainEntityOfPage": "https://www.klardata.com/blog/5-signs-business-needs-data-warehouse",
           }),
         }}
       />

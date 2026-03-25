@@ -1,0 +1,11 @@
+job_title,company_name,job_url,ats_platform,apply_status,failure_reason,date_applied,salary_range
+Senior Data Analyst,Stripe,https://stripe.com/jobs/analytics-001,Workday,success,,2026-02-18,"$130,000 - $160,000"
+Analytics Engineer,Airbnb,https://airbnb.com/careers/ae-042,Greenhouse,success,,2026-02-18,"$140,000 - $170,000"
+BI Engineer,Lyft,https://lyft.com/careers/bi-eng-019,Lever,failed,captcha detected,2026-02-19,"$120,000 - $145,000"
+BI Analyst,DoorDash,https://doordash.com/careers/bi-analyst-007,Workday,failed,login wall - requires SSO,2026-02-19,"$110,000 - $135,000"
+Senior Data Analyst,Coinbase,https://coinbase.com/careers/data-055,Greenhouse,success,,2026-02-19,"$145,000 - $175,000"
+Analytics Engineer,Pinterest,https://pinterest.com/careers/ae-031,Workday,failed,paywall - premium job board,2026-02-20,"$135,000 - $165,000"
+BI Engineer,Snowflake,https://snowflake.com/careers/bi-eng-088,iCIMS,failed,recaptcha challenge failed,2026-02-20,"$150,000 - $180,000"
+Senior Data Analyst,Notion,https://notion.com/careers/da-014,Ashby,success,,2026-02-20,"$125,000 - $155,000"
+BI Analyst,Figma,https://figma.com/careers/bi-003,Lever,failed,other - page did not load,2026-02-21,"$115,000 - $140,000"
+Analytics Engineer,Databricks,https://databricks.com/careers/ae-099,Greenhouse,success,,2026-02-21,"$155,000 - $185,000"

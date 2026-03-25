@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://klardata.com";
+  const base = "https://www.klardata.com";
   return [
     // Core pages
     { url: base, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },

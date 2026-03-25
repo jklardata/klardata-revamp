@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://klardata.com"),
+  metadataBase: new URL("https://www.klardata.com"),
   title: {
     default: "Klardata | Business Intelligence & Analytics Consulting",
     template: "%s | Klardata",
@@ -32,7 +32,7 @@ const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Klardata",
-  "url": "https://klardata.com",
+  "url": "https://www.klardata.com",
   "description": "Business intelligence and analytics consulting. Data strategy, BI implementation, Tableau, dbt, Snowflake, and BigQuery.",
   "founder": { "@type": "Person", "name": "Justin Leu" },
   "areaServed": "US",
