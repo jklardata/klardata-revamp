@@ -397,6 +397,12 @@ export default function Article() {
                 This is part of the broader work at Klardata on what it takes to deploy AI reliably in a Tableau environment. The benchmark is designed to evolve: more tasks, more models, and eventually tests that include the context a semantic layer would provide. The goal is not to rank models for marketing purposes. It is to understand where AI assistance is reliable enough to trust, where it needs human review, and what additional context needs to be defined to make AI-generated formulas consistently correct.
               </p>
 
+              <p className="text-slate-300 leading-relaxed mt-6">
+                If you want help evaluating whether your data catalog is ready for AI, I&apos;d love to talk.{" "}
+                <a href="mailto:justin@klardata.com" className="text-amber-300 hover:text-amber-200 transition-colors underline underline-offset-2">Reach out to justin@klardata.com</a>{" "}
+                and we can walk through your environment together.
+              </p>
+
               <div className="bg-indigo-900/30 border border-indigo-400/20 rounded-xl p-6 mt-6">
                 <h3 className="text-indigo-300 font-bold mb-2">The bigger picture</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
