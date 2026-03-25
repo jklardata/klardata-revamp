@@ -2,6 +2,21 @@ import Link from "next/link";
 
 const blogPosts = [
   {
+    title: "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found.",
+    excerpt: "A structured benchmark of ChatGPT-4o, Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5 across 20 Tableau calculated field tasks. The scores are close. The failure modes are revealing.",
+    date: "Apr 1, 2026",
+    category: "AI & Analytics",
+    readTime: "10 min read",
+    slug: "tableau-ai-benchmark",
+    gradient: "from-amber-900 via-orange-900 to-slate-950",
+    accentColor: "text-amber-300",
+    icon: (
+      <svg className="w-20 h-20 opacity-20 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      </svg>
+    )
+  },
+  {
     title: "Tableau Workbook Health Check: What to Audit Before You Migrate",
     excerpt: "Unused calculated fields, circular dependencies, and nested LOD expressions discovered mid-migration will cost you double the time. Here's what a proper workbook audit checks and how to score overall health.",
     date: "Mar 19, 2026",
