@@ -5,12 +5,12 @@ import AuthorBio from "@/components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found.",
-  description: "A structured benchmark of GPT-4o, Gemini 2.5 Flash, Claude Sonnet 4, and Claude Haiku 4.5 across 14 Tableau calculated field tasks — LOD expressions, date logic, table calculations, and conditional logic.",
+  description: "A structured benchmark of GPT-4o, Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5 across 20 Tableau calculated field tasks covering LOD expressions, date logic, table calculations, and conditional logic.",
   keywords: ["tableau ai benchmark", "ai tableau calculated fields", "gpt4o tableau", "gemini tableau", "claude tableau", "tableau lod expressions ai", "ai analytics tools", "tableau ai comparison"],
   alternates: { canonical: "https://klardata.com/blog/tableau-ai-benchmark" },
   openGraph: {
     title: "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found. | Klardata",
-    description: "A structured benchmark of GPT-4o, Gemini 2.5 Flash, Claude Sonnet 4, and Claude Haiku 4.5 across 14 Tableau calculated field tasks.",
+    description: "A structured benchmark of GPT-4o, Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5 across 20 Tableau calculated field tasks.",
     url: "https://klardata.com/blog/tableau-ai-benchmark",
     type: "article",
     publishedTime: "2026-04-01T00:00:00Z",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found. | Klardata",
-    description: "GPT-4o, Gemini 2.5 Flash, Claude Sonnet 4, and Claude Haiku 4.5 — benchmarked on 14 real Tableau tasks. The gaps are revealing.",
+    description: "GPT-4o, Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5, benchmarked on 20 real Tableau tasks. The gaps are revealing.",
   },
 };
 
@@ -39,7 +39,7 @@ export default function Article() {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             "headline": "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found.",
-            "description": "A structured benchmark of GPT-4o, Gemini 2.5 Flash, Claude Sonnet 4, and Claude Haiku 4.5 across 14 Tableau calculated field tasks.",
+            "description": "A structured benchmark of GPT-4o, Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5 across 20 Tableau calculated field tasks.",
             "datePublished": "2026-04-01T00:00:00Z",
             "dateModified": "2026-04-01T00:00:00Z",
             "author": { "@type": "Person", "name": "Justin Leu", "url": "https://klardata.com" },
@@ -93,61 +93,93 @@ export default function Article() {
           {/* Main article */}
           <article className="lg:col-span-2 space-y-0">
             <p className="text-slate-300 text-lg leading-relaxed mb-8">
-              There is a growing assumption in the data world that modern AI models can handle Tableau calculated fields well enough to be trusted in production workflows. Vendors are building AI-assisted formula generation into their products. Teams are considering whether AI can replace or augment their Tableau developers. I wanted to test that assumption directly, not with hand-picked examples, but with a structured rubric across a set of tasks that cover the full range of what Tableau authors actually do.
+              There is a growing assumption in the data world that modern AI models can handle Tableau calculated fields well enough to be trusted in production workflows. Teams are considering whether AI can replace or augment their Tableau developers. I wanted to test that assumption directly, not with hand-picked examples, but with a structured rubric across a set of tasks that cover the full range of what Tableau developers actually do.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed mb-8">
-              So I built a benchmark. Fourteen tasks, four models, scored against rubrics with partial credit. Here is what I found.
+              So I built a benchmark. 20 test cases, four models, scored against rubrics with partial credit. The models I tested: ChatGPT-4o, Google Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5. Here is what I found.
             </p>
 
             {/* Section: The Benchmark */}
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8 mb-6">
               <h2 className="text-2xl font-bold text-white mb-4">How the Benchmark Works</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Each task presents a realistic Tableau calculated field problem with a schema, an expected behavior, and a scoring rubric. The rubrics use tiered partial credit — for example, a correct <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">FIXED</code> LOD expression might score 3/3, while one with the wrong dimension scores 2/3, and a table calculation fallback scores 0/3.
+                Each test case presents a specific business metric and asks the model to write the Tableau calculated field that computes it. For example, the &quot;Customer % of Region Sales&quot; task provides a schema with <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">[Customer Name]</code>, <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">[Region]</code>, and <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">[Sales]</code>, then asks: write a calculated field that returns each customer&apos;s sales as a percentage of their region&apos;s total sales. The model responds with a formula. I then score that formula against a rubric with tiered partial credit: the correct <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">FIXED [Region]</code> approach scores 3/3, using the wrong dimension scores 2/3, and a table calculation fallback scores 0/3.
               </p>
-              <p className="text-slate-300 leading-relaxed mb-4">
-                The fourteen tasks span four categories:
+              <p className="text-slate-300 leading-relaxed mb-6">
+                Every formula was scored manually against the rubric. There is no automated checker. That scoring step is itself part of the point: understanding <em>why</em> a formula is wrong requires Tableau expertise, not just pattern matching. The 20 test cases span four categories:
               </p>
               <div className="grid sm:grid-cols-2 gap-4 mt-4">
                 <div className="border border-white/10 rounded-xl p-4">
-                  <h3 className="text-amber-300 font-bold text-sm uppercase tracking-widest mb-2">LOD Expressions</h3>
-                  <ul className="space-y-1 text-slate-400 text-sm">
-                    <li>Customer % of Region Sales</li>
-                    <li>First Purchase Date Flag</li>
-                    <li>Top Customer Flag per Region</li>
+                  <h3 className="text-amber-300 font-bold text-sm uppercase tracking-widest mb-3">LOD Expressions</h3>
+                  <ul className="space-y-2 text-slate-400 text-sm">
+                    {[
+                      { id: "lod-01", name: "Customer % of Region Sales", diff: "Medium" },
+                      { id: "lod-02", name: "First Purchase Date Flag", diff: "Medium" },
+                      { id: "lod-03", name: "Orders Per Customer", diff: "Easy" },
+                      { id: "lod-04", name: "Top Customer Flag per Region", diff: "Hard" },
+                      { id: "lod-05", name: "Category Total Ignoring Sub-Category", diff: "Easy" },
+                    ].map((t) => (
+                      <li key={t.id} className="flex items-start justify-between gap-2">
+                        <span>{t.name}</span>
+                        <span className={`text-xs px-1.5 py-0.5 rounded flex-shrink-0 ${t.diff === "Hard" ? "bg-red-900/40 text-red-400" : t.diff === "Medium" ? "bg-amber-900/40 text-amber-400" : "bg-green-900/40 text-green-400"}`}>{t.diff}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div className="border border-white/10 rounded-xl p-4">
-                  <h3 className="text-amber-300 font-bold text-sm uppercase tracking-widest mb-2">Date / Fiscal Logic</h3>
-                  <ul className="space-y-1 text-slate-400 text-sm">
-                    <li>Fiscal Year (Feb Start)</li>
-                    <li>Fiscal Quarter (Feb Start)</li>
-                    <li>Same Period Last Fiscal Year</li>
-                    <li>Rolling 12-Month Sales</li>
+                  <h3 className="text-amber-300 font-bold text-sm uppercase tracking-widest mb-3">Date / Fiscal Logic</h3>
+                  <ul className="space-y-2 text-slate-400 text-sm">
+                    {[
+                      { id: "date-01", name: "Fiscal Year (Feb Start)", diff: "Medium" },
+                      { id: "date-02", name: "Fiscal Quarter (Feb Start)", diff: "Hard" },
+                      { id: "date-03", name: "Days Since Last Order", diff: "Easy" },
+                      { id: "date-04", name: "Same Period Last Fiscal Year", diff: "Hard" },
+                      { id: "date-05", name: "Rolling 12-Month Sales", diff: "Medium" },
+                    ].map((t) => (
+                      <li key={t.id} className="flex items-start justify-between gap-2">
+                        <span>{t.name}</span>
+                        <span className={`text-xs px-1.5 py-0.5 rounded flex-shrink-0 ${t.diff === "Hard" ? "bg-red-900/40 text-red-400" : t.diff === "Medium" ? "bg-amber-900/40 text-amber-400" : "bg-green-900/40 text-green-400"}`}>{t.diff}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div className="border border-white/10 rounded-xl p-4">
-                  <h3 className="text-amber-300 font-bold text-sm uppercase tracking-widest mb-2">Table Calculations</h3>
-                  <ul className="space-y-1 text-slate-400 text-sm">
-                    <li>Running Total</li>
-                    <li>Period-over-Period % Change</li>
-                    <li>Rank Within Category</li>
-                    <li>% of Total</li>
+                  <h3 className="text-amber-300 font-bold text-sm uppercase tracking-widest mb-3">Table Calculations</h3>
+                  <ul className="space-y-2 text-slate-400 text-sm">
+                    {[
+                      { id: "tc-01", name: "Running Total", diff: "Easy" },
+                      { id: "tc-02", name: "Period-over-Period % Change", diff: "Medium" },
+                      { id: "tc-03", name: "Rank Within Category", diff: "Medium" },
+                      { id: "tc-04", name: "3-Month Moving Average", diff: "Medium" },
+                      { id: "tc-05", name: "% of Total", diff: "Easy" },
+                    ].map((t) => (
+                      <li key={t.id} className="flex items-start justify-between gap-2">
+                        <span>{t.name}</span>
+                        <span className={`text-xs px-1.5 py-0.5 rounded flex-shrink-0 ${t.diff === "Hard" ? "bg-red-900/40 text-red-400" : t.diff === "Medium" ? "bg-amber-900/40 text-amber-400" : "bg-green-900/40 text-green-400"}`}>{t.diff}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div className="border border-white/10 rounded-xl p-4">
-                  <h3 className="text-amber-300 font-bold text-sm uppercase tracking-widest mb-2">Conditional Logic</h3>
-                  <ul className="space-y-1 text-slate-400 text-sm">
-                    <li>Null-Safe Division</li>
-                    <li>Sales Tier Classification</li>
-                    <li>Dynamic Metric Selector</li>
-                    <li>Exclude Specific Category</li>
-                    <li>Cohort Condition with Null Handling</li>
+                  <h3 className="text-amber-300 font-bold text-sm uppercase tracking-widest mb-3">Conditional Logic</h3>
+                  <ul className="space-y-2 text-slate-400 text-sm">
+                    {[
+                      { id: "cond-01", name: "Null-Safe Division", diff: "Medium" },
+                      { id: "cond-02", name: "Sales Tier Classification", diff: "Easy" },
+                      { id: "cond-03", name: "Dynamic Metric Selector", diff: "Medium" },
+                      { id: "cond-04", name: "Exclude Specific Category", diff: "Easy" },
+                      { id: "cond-05", name: "Cohort Condition with Null Handling", diff: "Hard" },
+                    ].map((t) => (
+                      <li key={t.id} className="flex items-start justify-between gap-2">
+                        <span>{t.name}</span>
+                        <span className={`text-xs px-1.5 py-0.5 rounded flex-shrink-0 ${t.diff === "Hard" ? "bg-red-900/40 text-red-400" : t.diff === "Medium" ? "bg-amber-900/40 text-amber-400" : "bg-green-900/40 text-green-400"}`}>{t.diff}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
               <p className="text-slate-300 leading-relaxed mt-6">
-                Models were evaluated on correctness, not explanation quality. A formula that works in Tableau and handles edge cases correctly scores full marks. Plausible-sounding but broken formulas score partial or zero.
+                Models were evaluated on formula correctness, not explanation quality. A formula that works in Tableau and handles edge cases correctly scores full marks. Plausible-sounding but broken formulas score partial or zero.
               </p>
             </div>
 
@@ -155,7 +187,7 @@ export default function Article() {
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8 mb-6">
               <h2 className="text-2xl font-bold text-white mb-4">The Results</h2>
               <p className="text-slate-300 leading-relaxed mb-6">
-                All four models scored within a narrow band — between 78% and 83% — which is both encouraging and telling. Encouraging because these models clearly understand Tableau&apos;s logic reasonably well. Telling because none of them scored perfectly, and the failures cluster around the same categories: LOD expression nuance, aggregation correctness, and null handling.
+                All four models scored within a narrow band, between 78% and 83%, which is both encouraging and telling. Encouraging because these models clearly understand Tableau&apos;s logic reasonably well. Telling because none of them scored perfectly, and the failures cluster around the same categories: LOD expression nuance, aggregation correctness, and null handling.
               </p>
 
               {/* Score summary */}
@@ -163,7 +195,7 @@ export default function Article() {
                 {[
                   { model: "Claude Sonnet 4", score: "49 / 59", pct: "83%", color: "from-purple-900/60 to-slate-800/60", border: "border-purple-400/20", accent: "text-purple-300" },
                   { model: "GPT-4o", score: "48 / 59", pct: "81%", color: "from-green-900/60 to-slate-800/60", border: "border-green-400/20", accent: "text-green-300" },
-                  { model: "Gemini 2.5 Flash", score: "47 / 59", pct: "80%", color: "from-blue-900/60 to-slate-800/60", border: "border-blue-400/20", accent: "text-blue-300" },
+                  { model: "Gemini 1.5 Pro", score: "47 / 59", pct: "80%", color: "from-blue-900/60 to-slate-800/60", border: "border-blue-400/20", accent: "text-blue-300" },
                   { model: "Claude Haiku 4.5", score: "46 / 59", pct: "78%", color: "from-amber-900/60 to-slate-800/60", border: "border-amber-400/20", accent: "text-amber-300" },
                 ].map((m) => (
                   <div key={m.model} className={`bg-gradient-to-br ${m.color} border ${m.border} rounded-xl p-5`}>
@@ -188,7 +220,7 @@ export default function Article() {
                     height={400}
                     className="rounded-xl border border-white/10 w-full"
                   />
-                  <p className="text-slate-500 text-xs mt-2 text-center">Claude Sonnet 4 — 83%</p>
+                  <p className="text-slate-500 text-xs mt-2 text-center">Claude Sonnet 4: 83%</p>
                 </div>
                 <div>
                   <Image
@@ -198,7 +230,7 @@ export default function Article() {
                     height={400}
                     className="rounded-xl border border-white/10 w-full"
                   />
-                  <p className="text-slate-500 text-xs mt-2 text-center">GPT-4o — 81%</p>
+                  <p className="text-slate-500 text-xs mt-2 text-center">GPT-4o: 81%</p>
                 </div>
                 <div>
                   <Image
@@ -208,7 +240,7 @@ export default function Article() {
                     height={400}
                     className="rounded-xl border border-white/10 w-full"
                   />
-                  <p className="text-slate-500 text-xs mt-2 text-center">Gemini 2.5 Flash — 80%</p>
+                  <p className="text-slate-500 text-xs mt-2 text-center">Gemini 1.5 Pro: 80%</p>
                 </div>
                 <div>
                   <Image
@@ -218,7 +250,7 @@ export default function Article() {
                     height={400}
                     className="rounded-xl border border-white/10 w-full"
                   />
-                  <p className="text-slate-500 text-xs mt-2 text-center">Claude Haiku 4.5 — 78%</p>
+                  <p className="text-slate-500 text-xs mt-2 text-center">Claude Haiku 4.5: 78%</p>
                 </div>
               </div>
             </div>
@@ -227,10 +259,10 @@ export default function Article() {
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8 mb-6">
               <h2 className="text-2xl font-bold text-white mb-4">Where They Diverge: LOD Expression Nuance</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                The most interesting failures were not on simple tasks — all four models handled conditional logic and basic table calculations reasonably well. The gaps opened up on LOD expressions, where small differences in formula structure produce very different analytical behavior.
+                The most interesting failures were not on simple tasks. All four models handled conditional logic and basic table calculations reasonably well. The gaps opened up on LOD expressions, where small differences in formula structure produce very different analytical behavior.
               </p>
               <p className="text-slate-300 leading-relaxed mb-6">
-                The &quot;Customer % of Region Sales&quot; task is a good example. The task is conceptually simple: divide each customer&apos;s sales by the total sales for their region. But the correct Tableau formula requires a <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">FIXED</code> LOD expression with <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">[Region]</code> as the dimension. Any deviation from that specific pattern produces the wrong result — and each model made a different mistake.
+                The &quot;Customer % of Region Sales&quot; task is a good example. The task is conceptually simple: divide each customer&apos;s sales by the total sales for their region. But the correct Tableau formula requires a <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">FIXED</code> LOD expression with <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">[Region]</code> as the dimension. Any deviation from that specific pattern produces the wrong result, and each model made a different mistake.
               </p>
 
               {/* Model comparison: Claude Sonnet 4 */}
@@ -264,7 +296,7 @@ export default function Article() {
                   SUM([Sales]) / MAX(&#123;FIXED [Region]: SUM([Sales])&#125;)
                 </div>
                 <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                  Close, but subtly wrong. The <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">MAX()</code> wrapper around the FIXED LOD changes what gets returned: instead of each row computing the total for <em>its own region</em>, the outer <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">MAX()</code> returns the highest regional total across all regions. Every customer ends up divided by the same (largest) regional total, which is not what was asked. The FIXED expression itself is correct — the unnecessary aggregation wrapper breaks the semantics.
+                  Close, but subtly wrong. The <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">MAX()</code> wrapper around the FIXED LOD changes what gets returned: instead of each row computing the total for <em>its own region</em>, the outer <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">MAX()</code> returns the highest regional total across all regions. Every customer ends up divided by the same (largest) regional total, which is not what was asked. The FIXED expression itself is correct; the unnecessary aggregation wrapper breaks the semantics.
                 </p>
                 <Image
                   src="/photos/customer_pct_region_sales_gemini_45.png"
@@ -285,7 +317,7 @@ export default function Article() {
                   SUM([Sales]) / SUM(SUM([Sales])) OVER (PARTITION BY [Region])
                 </div>
                 <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                  Invalid Tableau syntax. This formula uses <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">OVER (PARTITION BY)</code>, which is SQL window function syntax — not Tableau. Tableau calculated fields do not support window function clauses written this way. The formula will not parse, let alone execute. This is the most instructive failure in the benchmark: a model that knows SQL well, but conflates SQL window functions with Tableau&apos;s LOD expressions.
+                  Invalid Tableau syntax. This formula uses <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">OVER (PARTITION BY)</code>, which is SQL window function syntax, not Tableau. Tableau calculated fields do not support window function clauses written this way. The formula will not parse, let alone execute. This is the most instructive failure in the benchmark: a model that knows SQL well, but conflates SQL window functions with Tableau&apos;s LOD expressions.
                 </p>
                 <Image
                   src="/photos/customer_pct_region_sales_claude_haiku45.png"
@@ -296,10 +328,27 @@ export default function Article() {
                 />
               </div>
 
-              <div className="bg-amber-900/30 border border-amber-400/20 rounded-xl p-6 mt-6">
-                <h3 className="text-amber-300 font-bold mb-2">What this reveals about semantic definitions</h3>
+              {/* Scoring image */}
+              <div className="mt-8 mb-6">
+                <p className="text-slate-400 text-sm mb-3 uppercase tracking-widest font-bold">Scoring in practice</p>
+                <Image
+                  src="/photos/customer_pct_region_sales_scoring_gemini_45.png"
+                  alt="Manual scoring rubric for Gemini 1.5 Pro on Customer % of Region Sales"
+                  width={800}
+                  height={500}
+                  className="rounded-xl border border-white/10 w-full"
+                />
+                <p className="text-slate-500 text-xs mt-2">Gemini 1.5 Pro scoring panel for Customer % of Region Sales. Every formula required manual review against the rubric.</p>
+              </div>
+
+              <p className="text-slate-300 leading-relaxed mb-6">
+                This scoring step is worth calling out explicitly. There is no automated test runner checking whether a formula is correct. Each response required a Tableau practitioner to read the formula, understand what it actually computes, and map it to the rubric tier. That process revealed something important: a formula can look reasonable at first glance and still be analytically wrong. The Gemini response above is a clear example. The syntax is valid Tableau. It would not throw an error. But the result would be incorrect, and a non-expert reviewer might not catch it.
+              </p>
+
+              <div className="bg-amber-900/30 border border-amber-400/20 rounded-xl p-6">
+                <h3 className="text-amber-300 font-bold mb-2">Why interpretation is critical for agentic semantic layers</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  Three models, three different interpretations of the same question — and only one was correct. This is exactly why an agentic semantic layer matters. If AI models are generating formulas based on a field called <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">[Sales]</code> with no additional context, they are guessing at grain, aggregation behavior, and the correct LOD scope. A proper semantic definition that specifies the field&apos;s grain, how it should be aggregated, and the correct dimensional context dramatically narrows the space of incorrect interpretations.
+                  Three models, three different interpretations of the same question, and only one was correct. This is exactly why an agentic semantic layer matters. When AI models generate formulas with only a field name to go on, they are guessing at grain, aggregation behavior, and the correct LOD scope. A proper semantic definition that specifies how a field should be aggregated, at what grain, and within which dimensional context dramatically narrows the space of incorrect interpretations. Without that context, even a capable model will produce plausible-looking formulas that fail silently in production.
                 </p>
               </div>
             </div>
@@ -308,7 +357,7 @@ export default function Article() {
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8 mb-6">
               <h2 className="text-2xl font-bold text-white mb-4">What 80% Actually Means in Practice</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                An 80% score across 14 tasks sounds decent. But the failures are not uniformly distributed across easy and hard tasks. They concentrate in exactly the places where incorrect formulas are hardest to catch: LOD expressions that return plausible-looking but wrong values, fiscal date logic that is off by one month for a specific edge case, and null handling that silently converts nulls to zero.
+                An 80% score across 20 tasks sounds decent. But the failures are not uniformly distributed across easy and hard tasks. They concentrate in exactly the places where incorrect formulas are hardest to catch: LOD expressions that return plausible-looking but wrong values, fiscal date logic that is off by one month for a specific edge case, and null handling that silently converts nulls to zero.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
                 A Tableau developer reviewing AI-generated formulas needs to know which categories to scrutinize most carefully. Based on this benchmark, that list is:
@@ -317,7 +366,7 @@ export default function Article() {
                 {[
                   { item: "Nested LOD expressions", detail: "All models struggled with the top customer flag per region task, which requires a nested FIXED approach. Single FIXED is the most common incorrect answer." },
                   { item: "Aggregation wrappers on FIXED LODs", detail: "Wrapping a FIXED LOD in MAX(), SUM(), or similar functions changes what gets returned in ways that are not obvious from the formula text." },
-                  { item: "Fiscal year edge cases", detail: "January behavior in February-start fiscal calendars tripped up multiple models. Off-by-one errors here are silent — the formula runs, it just returns the wrong quarter for January dates." },
+                  { item: "Fiscal year edge cases", detail: "January behavior in February-start fiscal calendars tripped up multiple models. Off-by-one errors here are silent: the formula runs, it just returns the wrong quarter for January dates." },
                   { item: "Null semantics vs. zero handling", detail: "ZN() and ISNULL() are not interchangeable. Models that defaulted to ZN() lost points because ZN() converts nulls to zero, which has different analytical meaning than a proper null check." },
                 ].map((t) => (
                   <li key={t.item} className="flex items-start gap-3">
@@ -335,7 +384,7 @@ export default function Article() {
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8 mb-6">
               <h2 className="text-2xl font-bold text-white mb-4">Why I Built This Benchmark</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Most AI capability comparisons in the analytics space rely on subjective evaluation or on tasks that are easy enough for any model to solve correctly. Tableau calculated fields are a useful test bed because they have clear right and wrong answers, they require knowledge that is specific to Tableau&apos;s execution model (not just general SQL), and the failure modes are meaningful — a wrong formula does not throw an error, it produces a wrong chart.
+                Most AI capability comparisons in the analytics space rely on subjective evaluation or on tasks that are easy enough for any model to solve correctly. Tableau calculated fields are a useful test bed because they have clear right and wrong answers, they require knowledge that is specific to Tableau&apos;s execution model (not just general SQL), and the failure modes are meaningful: a wrong formula does not throw an error, it produces a wrong chart.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
                 I built this as part of the broader work at Klardata on what it takes to deploy AI reliably in a Tableau environment. The benchmark is designed to evolve: more tasks, more models, and eventually tests that include the context an agentic semantic layer would provide.
@@ -347,7 +396,7 @@ export default function Article() {
               <div className="bg-indigo-900/30 border border-indigo-400/20 rounded-xl p-6 mt-6">
                 <h3 className="text-indigo-300 font-bold mb-2">The bigger picture</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  All four models scored between 78% and 83%. That narrow band tells you something: these models are all drawing on similar underlying training about Tableau and SQL, and they hit the same ceiling on tasks that require deep Tableau-specific reasoning. Closing that ceiling likely requires better context — field definitions, grain documentation, aggregation rules — not just a better base model. That is the case for agentic semantic layers in one benchmark.
+                  All four models scored between 78% and 83%. That narrow band tells you something: these models are all drawing on similar underlying training about Tableau and SQL, and they hit the same ceiling on tasks that require deep Tableau-specific reasoning. Closing that ceiling likely requires better context: field definitions, grain documentation, aggregation rules. Not just a better base model. That is the case for agentic semantic layers in one benchmark.
                 </p>
               </div>
             </div>
@@ -375,7 +424,7 @@ export default function Article() {
                 {[
                   { model: "Claude Sonnet 4", score: "83%", pts: "49/59", color: "text-purple-300", bar: "bg-purple-500" },
                   { model: "GPT-4o", score: "81%", pts: "48/59", color: "text-green-300", bar: "bg-green-500" },
-                  { model: "Gemini 2.5 Flash", score: "80%", pts: "47/59", color: "text-blue-300", bar: "bg-blue-500" },
+                  { model: "Gemini 1.5 Pro", score: "80%", pts: "47/59", color: "text-blue-300", bar: "bg-blue-500" },
                   { model: "Claude Haiku 4.5", score: "78%", pts: "46/59", color: "text-amber-300", bar: "bg-amber-500" },
                 ].map((m) => (
                   <div key={m.model}>
@@ -390,7 +439,7 @@ export default function Article() {
                   </div>
                 ))}
               </div>
-              <p className="text-slate-500 text-xs mt-4">14 tasks · 59 total points · Apr 2026</p>
+              <p className="text-slate-500 text-xs mt-4">20 tasks · 59 total points · Apr 2026</p>
             </div>
 
             {/* Related articles */}
