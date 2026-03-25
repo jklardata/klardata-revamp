@@ -20,6 +20,21 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    title: "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found.",
+    excerpt: "A structured benchmark of GPT-4o, Gemini 2.5 Flash, Claude Sonnet 4, and Claude Haiku 4.5 across 14 Tableau calculated field tasks. The scores are close. The failure modes are revealing.",
+    date: "Apr 1, 2026",
+    category: "AI & Analytics",
+    readTime: "10 min read",
+    slug: "tableau-ai-benchmark",
+    gradient: "from-amber-900 via-orange-900 to-slate-950",
+    accentColor: "text-amber-300",
+    icon: (
+      <svg className="w-24 h-24 opacity-20 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+      </svg>
+    )
+  },
+  {
     title: "What Does It Mean to Formally Define a Metric? (And Why It Matters for AI Agents)",
     excerpt: "Most teams think they have defined metrics. They don't. Here's what formal metric definition actually requires — grain, filters, aggregation logic, ownership, and versioning — and why agents will expose every gap.",
     date: "Mar 24, 2026",
