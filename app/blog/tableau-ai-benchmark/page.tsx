@@ -93,7 +93,7 @@ export default function Article() {
           {/* Main article */}
           <article className="lg:col-span-2 space-y-0">
             <p className="text-slate-300 text-lg leading-relaxed mb-8">
-              There is a growing assumption in the data world that modern AI models can handle <a href="https://www.tableau.com" target="_blank" rel="noopener noreferrer" className="text-amber-300 hover:text-amber-200 transition-colors underline underline-offset-2">Tableau</a> calculated fields well enough to be trusted in production workflows. Teams are considering whether AI can replace or augment their Tableau developers. I wanted to test that assumption directly, not with hand-picked examples, but with a structured rubric across a set of tasks that cover the full range of what Tableau developers actually do.
+              There is a growing assumption in the data world that modern AI models can handle <a href="https://www.tableau.com/learn/articles/calculated-field-tableau" target="_blank" rel="noopener noreferrer" className="text-amber-300 hover:text-amber-200 transition-colors underline underline-offset-2">Tableau calculated fields</a> well enough to be trusted in production workflows. Teams are considering whether AI can replace or augment their Tableau developers. I wanted to test that assumption directly, not with hand-picked examples, but with a structured rubric across a set of tasks that cover the full range of what Tableau developers actually do.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed mb-8">
               So I built a benchmark. 20 test cases, four models, scored against rubrics with partial credit. The models I tested:{" "}
