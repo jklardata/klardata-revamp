@@ -19,6 +19,12 @@ export const metadata: Metadata = {
 };
 
 const articles = [
+  // Hidden for now:
+  // "What Does It Mean to Formally Define a Metric? (And Why It Matters for AI Agents)"
+  // "Why Table-Level Permissions Aren't Enough for AI Agents"
+  // "Data Lineage for AI Agents: Why Provenance Is Now a Governance Requirement"
+  // "Is Your Data Stack Built for 500 Queries in 10 Minutes? Designing for Agentic Query Patterns"
+  // "The Organizational Side of Semantic Layer Governance: Policies, Owners, and Audit Trails"
   {
     title: "I Tested 4 AI Models on Tableau Calculated Fields. Here's What I Found.",
     excerpt: "A structured benchmark of GPT-4o, Gemini 2.5 Flash, Claude Sonnet 4, and Claude Haiku 4.5 across 14 Tableau calculated field tasks. The scores are close. The failure modes are revealing.",
@@ -31,81 +37,6 @@ const articles = [
     icon: (
       <svg className="w-24 h-24 opacity-20 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-      </svg>
-    )
-  },
-  {
-    title: "What Does It Mean to Formally Define a Metric? (And Why It Matters for AI Agents)",
-    excerpt: "Most teams think they have defined metrics. They don't. Here's what formal metric definition actually requires — grain, filters, aggregation logic, ownership, and versioning — and why agents will expose every gap.",
-    date: "Mar 24, 2026",
-    category: "Semantic Layer",
-    readTime: "9 min read",
-    slug: "semantic-layer-metric-definitions",
-    gradient: "from-blue-900 via-indigo-900 to-slate-950",
-    accentColor: "text-blue-300",
-    icon: (
-      <svg className="w-24 h-24 opacity-20 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-      </svg>
-    )
-  },
-  {
-    title: "Why Table-Level Permissions Aren't Enough for AI Agents",
-    excerpt: "Granting agents table-level access is like giving someone your house key when they only need to read your mail. Here's what fine-grained access control looks like for agentic semantic layer access.",
-    date: "Mar 24, 2026",
-    category: "Semantic Layer",
-    readTime: "8 min read",
-    slug: "semantic-layer-access-control",
-    gradient: "from-red-900 via-rose-900 to-slate-950",
-    accentColor: "text-red-300",
-    icon: (
-      <svg className="w-24 h-24 opacity-20 text-red-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-      </svg>
-    )
-  },
-  {
-    title: "Data Lineage for AI Agents: Why Provenance Is Now a Governance Requirement",
-    excerpt: "When a human analyst gets a number wrong, you can ask them how they calculated it. When an agent gets a number wrong, you need lineage. Here's what end-to-end traceability requires.",
-    date: "Mar 24, 2026",
-    category: "Semantic Layer",
-    readTime: "9 min read",
-    slug: "semantic-layer-lineage-traceability",
-    gradient: "from-emerald-900 via-teal-900 to-slate-950",
-    accentColor: "text-emerald-300",
-    icon: (
-      <svg className="w-24 h-24 opacity-20 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    )
-  },
-  {
-    title: "Is Your Data Stack Built for 500 Queries in 10 Minutes? Designing for Agentic Query Patterns",
-    excerpt: "Human analysts run 5-10 queries per session. Agents run hundreds. Your warehouse cost governance, schema stability, and query observability were not designed for this. Here's what needs to change.",
-    date: "Mar 24, 2026",
-    category: "Semantic Layer",
-    readTime: "8 min read",
-    slug: "semantic-layer-agent-query-tolerance",
-    gradient: "from-violet-900 via-purple-900 to-slate-950",
-    accentColor: "text-violet-300",
-    icon: (
-      <svg className="w-24 h-24 opacity-20 text-violet-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    )
-  },
-  {
-    title: "The Organizational Side of Semantic Layer Governance: Policies, Owners, and Audit Trails",
-    excerpt: "Technical infrastructure isn't enough. Agentic semantic layer governance requires policies, designated owners, approval workflows, and audit trails. Here's what governance maturity actually looks like.",
-    date: "Mar 24, 2026",
-    category: "Semantic Layer",
-    readTime: "10 min read",
-    slug: "semantic-layer-governance-maturity",
-    gradient: "from-amber-900 via-orange-900 to-slate-950",
-    accentColor: "text-amber-300",
-    icon: (
-      <svg className="w-24 h-24 opacity-20 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     )
   },
