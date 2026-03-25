@@ -96,17 +96,21 @@ export default function Article() {
               There is a growing assumption in the data world that modern AI models can handle Tableau calculated fields well enough to be trusted in production workflows. Teams are considering whether AI can replace or augment their Tableau developers. I wanted to test that assumption directly, not with hand-picked examples, but with a structured rubric across a set of tasks that cover the full range of what Tableau developers actually do.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed mb-8">
-              So I built a benchmark. 20 test cases, four models, scored against rubrics with partial credit. The models I tested: ChatGPT-4o, Google Gemini 1.5 Pro, Claude Sonnet 4, and Claude Haiku 4.5. Here is what I found.
+              So I built a benchmark. 20 test cases, four models, scored against rubrics with partial credit. The models I tested:{" "}
+              <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer" className="text-amber-300 hover:text-amber-200 transition-colors underline underline-offset-2">ChatGPT-4o</a>,{" "}
+              <a href="https://deepmind.google/models/gemini/" target="_blank" rel="noopener noreferrer" className="text-amber-300 hover:text-amber-200 transition-colors underline underline-offset-2">Google Gemini 1.5 Pro</a>,{" "}
+              <a href="https://www.anthropic.com/claude" target="_blank" rel="noopener noreferrer" className="text-amber-300 hover:text-amber-200 transition-colors underline underline-offset-2">Claude Sonnet 4</a>, and{" "}
+              <a href="https://www.anthropic.com/claude" target="_blank" rel="noopener noreferrer" className="text-amber-300 hover:text-amber-200 transition-colors underline underline-offset-2">Claude Haiku 4.5</a>. Here is what I found.
             </p>
 
             {/* Section: The Benchmark */}
-            <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8 mb-6">
+            <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8 mb-6 mt-10">
               <h2 className="text-2xl font-bold text-white mb-4">How the Benchmark Works</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
                 Each test case presents a specific business metric and asks the model to write the Tableau calculated field that computes it. For example, the &quot;Customer % of Region Sales&quot; task provides a schema with <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">[Customer Name]</code>, <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">[Region]</code>, and <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">[Sales]</code>, then asks: write a calculated field that returns each customer&apos;s sales as a percentage of their region&apos;s total sales. The model responds with a formula. I then score that formula against a rubric with tiered partial credit: the correct <code className="bg-slate-700 px-1.5 py-0.5 rounded text-amber-300 text-sm">FIXED [Region]</code> approach scores 3/3, using the wrong dimension scores 2/3, and a table calculation fallback scores 0/3.
               </p>
               <p className="text-slate-300 leading-relaxed mb-6">
-                Every formula was scored manually against the rubric. There is no automated checker. That scoring step is itself part of the point: understanding <em>why</em> a formula is wrong requires Tableau expertise, not just pattern matching. The 20 test cases span four categories:
+                Every formula was scored manually and reviewed by a human to determine whether it is correct. Understanding <em>why</em> a formula is wrong requires Tableau expertise, not just pattern matching, which is why human review is a core part of the process. The 20 test cases span four categories:
               </p>
               <div className="grid sm:grid-cols-2 gap-4 mt-4">
                 <div className="border border-white/10 rounded-xl p-4">
@@ -338,7 +342,7 @@ export default function Article() {
                   height={500}
                   className="rounded-xl border border-white/10 w-full"
                 />
-                <p className="text-slate-500 text-xs mt-2">Gemini 1.5 Pro scoring panel for Customer % of Region Sales. Every formula required manual review against the rubric.</p>
+                <p className="text-slate-500 text-xs mt-2">Gemini 1.5 Pro scoring panel for Customer % of Region Sales. Each formula was manually reviewed by a human against the rubric criteria.</p>
               </div>
 
               <p className="text-slate-300 leading-relaxed mb-6">
