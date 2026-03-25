@@ -357,7 +357,7 @@ export default function Article() {
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8 mb-6">
               <h2 className="text-2xl font-bold text-white mb-4">What 80% Actually Means in Practice</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                An 80% score across 20 tasks sounds decent. But the failures are not uniformly distributed across easy and hard tasks. They concentrate in exactly the places where incorrect formulas are hardest to catch: LOD expressions that return plausible-looking but wrong values, fiscal date logic that is off by one month for a specific edge case, and null handling that silently converts nulls to zero.
+                An 80% score across 20 tasks sounds decent. But it means the models are not 100% accurate, and the failures are not evenly distributed. They concentrate in exactly the places where incorrect formulas are hardest to catch: LOD expressions that return plausible-looking but wrong values, fiscal date logic that is off by one month for a specific edge case, and null handling that silently converts nulls to zero.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
                 A Tableau developer reviewing AI-generated formulas needs to know which categories to scrutinize most carefully. Based on this benchmark, that list is:
@@ -384,19 +384,19 @@ export default function Article() {
             <div className="rounded-2xl bg-slate-800/50 border border-white/10 p-8 mb-6">
               <h2 className="text-2xl font-bold text-white mb-4">Why I Built This Benchmark</h2>
               <p className="text-slate-300 leading-relaxed mb-4">
-                Most AI capability comparisons in the analytics space rely on subjective evaluation or on tasks that are easy enough for any model to solve correctly. Tableau calculated fields are a useful test bed because they have clear right and wrong answers, they require knowledge that is specific to Tableau&apos;s execution model (not just general SQL), and the failure modes are meaningful: a wrong formula does not throw an error, it produces a wrong chart.
+                Most AI capability comparisons in the analytics space rely on subjective evaluation or on tasks easy enough for any model to solve correctly. Tableau calculated fields are a better test bed: they have clear right and wrong answers, they require knowledge specific to Tableau&apos;s execution model rather than general SQL, and the failure modes are meaningful. A wrong formula does not throw an error. It produces a wrong chart.
               </p>
               <p className="text-slate-300 leading-relaxed mb-4">
-                I built this as part of the broader work at Klardata on what it takes to deploy AI reliably in a Tableau environment. The benchmark is designed to evolve: more tasks, more models, and eventually tests that include the context an agentic semantic layer would provide.
+                I built this to identify the practical issues data practitioners will face when trying to build dashboards with AI. If the metrics are not validated and the model is not given the correct interpretation context, it will produce a confidently wrong result. That distinction matters more as BI tools move toward the agentic era.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                The goal is not to rank models for marketing purposes. It is to understand where AI assistance is reliable enough to trust, where it needs review, and what additional context a semantic layer needs to provide to make AI-generated formulas consistently correct.
+                This is part of the broader work at Klardata on what it takes to deploy AI reliably in a Tableau environment. The benchmark is designed to evolve: more tasks, more models, and eventually tests that include the context a semantic layer would provide. The goal is not to rank models for marketing purposes. It is to understand where AI assistance is reliable enough to trust, where it needs human review, and what additional context needs to be defined to make AI-generated formulas consistently correct.
               </p>
 
               <div className="bg-indigo-900/30 border border-indigo-400/20 rounded-xl p-6 mt-6">
                 <h3 className="text-indigo-300 font-bold mb-2">The bigger picture</h3>
                 <p className="text-slate-300 text-sm leading-relaxed">
-                  All four models scored between 78% and 83%. That narrow band tells you something: these models are all drawing on similar underlying training about Tableau and SQL, and they hit the same ceiling on tasks that require deep Tableau-specific reasoning. Closing that ceiling likely requires better context: field definitions, grain documentation, aggregation rules. Not just a better base model. That is the case for agentic semantic layers in one benchmark.
+                  All four models scored within the same narrow band. That tells you something: they are drawing on similar underlying training about Tableau and SQL, and they hit the same ceiling on tasks that require deep Tableau-specific reasoning. Closing that ceiling requires better context, specifically field definitions, grain documentation, and aggregation rules. Not just a better base model. As teams think about evolving or migrating their BI tools to leverage AI, the developers closest to the data will need to think carefully about how each metric should be interpreted by the model, and make those definitions explicit before trusting AI-generated output in production.
                 </p>
               </div>
             </div>
