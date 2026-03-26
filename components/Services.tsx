@@ -13,6 +13,16 @@ export default function Services() {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "BI Tool AI Evaluation",
+      description: "Structured benchmarking of how well AI models generate formulas and logic for your specific BI environment. Understand where AI assistance is reliable, where it needs review, and what semantic context your data catalog needs to provide before trusting AI-generated output.",
+      benefits: ["AI formula accuracy benchmarking", "Data catalog AI readiness", "Semantic layer gap analysis", "Model comparison & recommendations"]
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
