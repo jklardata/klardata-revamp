@@ -23,6 +23,16 @@ export default function Services() {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+        </svg>
+      ),
+      title: "AI-Powered BI Migration",
+      description: "Accelerate BI tool migrations using AI to audit, document, and translate your existing logic. From mapping Tableau calculated fields and LOD expressions to dbt models, to identifying unused assets and dependencies before you move — reducing migration risk and cutting timelines significantly.",
+      benefits: ["Workbook audit & documentation", "Calculated field translation", "Dependency mapping", "Migration risk assessment"]
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
