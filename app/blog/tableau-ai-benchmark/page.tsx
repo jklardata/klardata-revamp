@@ -341,7 +341,7 @@ export default function Article() {
               </div>
 
               <p className="text-slate-300 leading-relaxed mb-6">
-                This scoring step is worth calling out explicitly. There is no automated test runner checking whether a formula is correct. Each response required a Tableau practitioner to read the formula, understand what it actually computes, and map it to the rubric tier. That process revealed something important: a formula can look reasonable at first glance and still be analytically wrong. The Gemini response above is a clear example. The syntax is valid Tableau. It would not throw an error. But the result would be incorrect, and a non-expert reviewer might not catch it.
+                This scoring step is worth calling out explicitly. Each response required a Tableau practitioner to read the formula, understand what it actually computes, and map it to the rubric tier. That process revealed something important: a formula can look reasonable at first glance and still be analytically wrong. The Gemini response above is a clear example. The syntax is valid Tableau. It would not throw an error. But the result would be incorrect, and a non-expert reviewer might not catch it.
               </p>
 
               <div className="bg-amber-900/30 border border-amber-400/20 rounded-xl p-6">
